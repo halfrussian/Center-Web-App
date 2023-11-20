@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider, BaseStyles } from "@primer/react";
+import React, { useState } from "react";
+import Nav from "./components/Nav";
+import HeroIntro from "./components/HeroIntro";
+import FilteringProjects from "./components/FilteringProjects";
+import Projects from "./components/Projects";
 
-function App() {
+
+const App = () => {
+  const [themeStyles, setThemeStyles] = useState('light');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider colorMode={themeStyles}>
+      <BaseStyles>
+        <Nav themeStyles={themeStyles} setThemeStyles={setThemeStyles} />
+        <HeroIntro  />
+        <FilteringProjects  />
+        <Projects  />
+      </BaseStyles>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
