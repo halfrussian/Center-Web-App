@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Projects = (props) => {
 
-  console.log(props.data)
   return (
     <>
     <Box sx={{ maxWidth: "100%", backgroundColor: "canvas.default" }}>
@@ -39,13 +38,13 @@ const Projects = (props) => {
                       </Box>
                       <Box display="flex" sx={{ fontFamily: "Gill Sans", mt: 3 }}>
 
-                        {/* {categories.map(catItem => {
+                        {categories.map(catItem => {
                           return (
                             <>
                               <Text sx={{ marginRight: 2 }}>{`${catItem} /`}</Text>
                             </>
                           )
-                        })} */}
+                        })}
                       </Box>
                       <Box>
                       <Heading as="h2" sx={{fontSize: 4}}>

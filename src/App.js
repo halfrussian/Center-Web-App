@@ -1,9 +1,10 @@
 import { ThemeProvider, BaseStyles } from "@primer/react";
 import React, { useState } from "react";
 import Nav from "./components/Nav";
-import HeroIntro from "./components/HeroIntro";
-import FilteringProjects from "./components/FilteringProjects";
-import Projects from "./components/Projects";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from "./pages/Home";
+import About from './pages/About'
+import Interests from './pages/Interests'
 
 
 const App = () => {
@@ -13,11 +14,18 @@ const App = () => {
     <ThemeProvider colorMode={themeStyles}>
       <BaseStyles>
         <Nav themeStyles={themeStyles} setThemeStyles={setThemeStyles} />
-        <HeroIntro  />
-        <FilteringProjects  />
-       
+      
+        <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/interests' element={<Interests />} />
+        </Routes>
+      </Router>
       </BaseStyles>
     </ThemeProvider>
+
+    
   );
 };
 

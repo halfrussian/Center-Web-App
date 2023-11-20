@@ -1,7 +1,9 @@
+import gitHubImage from '../assets/projectCardImages/github.png'
+
 export const projectData = [
     {
         id: 1,
-        image: 'https://assets-global.website-files.com/63995be510337137d26a0abc/6525884e444069328ee14e65_Dropbox%20signup%20left%20(15)-p-800.jpg',
+        image: gitHubImage,
         categories: ['B2B', 'B2C', 'Web'],
         title: 'Github - Streamlining Access To Shared Cloud Storage for Non-Dropbox users',
         desc: 'I proactively identified friction in the signup journey for non-Dropbox users, proposed redesigning it, and helped prioritize it on the product roadmap. Released in Sep 21.'

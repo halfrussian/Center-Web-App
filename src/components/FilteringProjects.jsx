@@ -1,22 +1,32 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import { Box, Button } from "@primer/react";
 import { projectData } from '../data/projectData'
 import Projects from "./Projects";
 
 const FilteringProjects = () => {
-
-
   const [filteredData, setFilteredData] = useState(projectData)
-
-
   const bTooBFilter = () => {
-    setFilteredData(projectData.filter(item => !item.categories.includes('Branding')))
+
+    setFilteredData(projectData.filter(item => item.categories.includes('B2B')))
   }
 
-  console.log(filteredData)
+  const bTooCFilter = () => {
+    setFilteredData(projectData.filter(item => item.categories.includes('B2C')))
+  }
 
 
+  const mobileFilter = () => {
+    setFilteredData(projectData.filter(item => item.categories.includes('Mobile')))
+  }
+
+  const brandingFilter = () => {
+    setFilteredData(projectData.filter(item => item.categories.includes('Branding')))
+  }
     
+
+  const webFilter = () => {
+    setFilteredData(projectData.filter(item => item.categories.includes('Web')))
+  }
 
 
   return (
@@ -63,6 +73,7 @@ const FilteringProjects = () => {
               fontSize: 2,
               backgroundColor: "canvas.default",
             }}
+            onClick={bTooCFilter}
           >
             B2C
           </Button>
@@ -77,6 +88,7 @@ const FilteringProjects = () => {
               fontSize: 2,
               backgroundColor: "canvas.default",
             }}
+            onClick={webFilter}
           >
             Web
           </Button>
@@ -91,6 +103,7 @@ const FilteringProjects = () => {
               fontSize: 2,
               backgroundColor: "canvas.default",
             }}
+            onClick={mobileFilter}
           >
             Mobile
           </Button>
@@ -105,18 +118,13 @@ const FilteringProjects = () => {
               fontSize: 2,
               backgroundColor: "canvas.default",
             }}
+            onClick={brandingFilter}
           >
             Branding
           </Button>
-
-          
         </Box>
       </Box>
-
       <Projects data={filteredData}  />
-
-
-      
     </>
   );
 };

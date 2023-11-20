@@ -4,10 +4,9 @@ import {
   Header,
   Avatar,
   Box,
-  ActionMenu,
   ActionList,
   Tooltip,
-  IconButton,
+  IconButton
 } from "@primer/react";
 import Image from "../assets/heroimg.jpeg";
 import Switch from "react-switch";
@@ -15,6 +14,7 @@ import "./Nav.css";
 import { ThreeBarsIcon } from "@primer/octicons-react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Nav = (props) => {
   const [checkered, setCheckered] = useState(false);
@@ -59,17 +59,20 @@ const Nav = (props) => {
                 color: "fg.default",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
+              href='/'
             >
               Home
             </Header.Link>
           </Header.Item>
           <Header.Item>
+          
             <Header.Link
               sx={{
                 fontSize: 3,
                 color: "fg.default",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
+              href='/about'
             >
               About
             </Header.Link>
@@ -92,6 +95,7 @@ const Nav = (props) => {
                 color: "fg.default",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
+              href='/interests'
             >
               Interests
             </Header.Link>
@@ -180,7 +184,17 @@ const Nav = (props) => {
                     ":hover": { textDecoration: "none", color: "fg.muted" },
                 }}
                 >
+                  <Header.Link
+              sx={{
+                fontSize: 3,
+                color: "fg.default",
+                ":hover": { textDecoration: "none", color: "fg.muted" },
+              }}
+              href='/'
+            >
               Home
+            </Header.Link>
+              
             </ActionList.Item>
             <ActionList.Divider />
             <ActionList.Item
@@ -189,8 +203,38 @@ const Nav = (props) => {
                     color: "fg.default",
                     ":hover": { textDecoration: "none", color: "fg.muted" },
                 }}
+              
                 >
+              <Header.Link
+              sx={{
+                fontSize: 3,
+                color: "fg.default",
+                ":hover": { textDecoration: "none", color: "fg.muted" },
+              }}
+              href='/about'
+            >
               About
+            </Header.Link>
+            </ActionList.Item>
+            <ActionList.Divider />
+            
+            <ActionList.Item
+                sx={{
+                    fontSize: 3,
+                    color: "fg.default",
+                    ":hover": { textDecoration: "none", color: "fg.muted" },
+                }}
+                >
+             <Header.Link
+              sx={{
+                fontSize: 3,
+                color: "fg.default",
+                ":hover": { textDecoration: "none", color: "fg.muted" },
+              }}
+              
+            >
+              Resume
+            </Header.Link>
             </ActionList.Item>
             <ActionList.Divider />
             <ActionList.Item
@@ -199,8 +243,18 @@ const Nav = (props) => {
                     color: "fg.default",
                     ":hover": { textDecoration: "none", color: "fg.muted" },
                 }}
+               
                 >
-              Resume
+            <Header.Link
+              sx={{
+                fontSize: 3,
+                color: "fg.default",
+                ":hover": { textDecoration: "none", color: "fg.muted" },
+              }}
+              href='/interests'
+            >
+              Interests
+            </Header.Link>
             </ActionList.Item>
             <ActionList.Divider />
             <ActionList.Item className="actionMenuListItem">
