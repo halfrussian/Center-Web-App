@@ -15,7 +15,7 @@ const App = () => {
         <Nav themeStyles={themeStyles} setThemeStyles={setThemeStyles} />
         <HeroIntro  />
         <FilteringProjects  />
-        <Projects  />
+       
       </BaseStyles>
     </ThemeProvider>
   );

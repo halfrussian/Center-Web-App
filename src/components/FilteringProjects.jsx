@@ -1,7 +1,24 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Box, Button } from "@primer/react";
+import { projectData } from '../data/projectData'
+import Projects from "./Projects";
 
 const FilteringProjects = () => {
+
+
+  const [filteredData, setFilteredData] = useState(projectData)
+
+
+  const bTooBFilter = () => {
+    setFilteredData(projectData.filter(item => !item.categories.includes('Branding')))
+  }
+
+  console.log(filteredData)
+
+
+    
+
+
   return (
     <>
       <Box
@@ -9,7 +26,6 @@ const FilteringProjects = () => {
         sx={{
           width: "100%",
           backgroundColor: "canvas.default",
-      
         }}
         className="heroIntro"
       >
@@ -32,6 +48,7 @@ const FilteringProjects = () => {
               fontSize: 2,
               backgroundColor: "canvas.default",
             }}
+            onClick={bTooBFilter}
           >
             B2B
           </Button>
@@ -95,6 +112,11 @@ const FilteringProjects = () => {
           
         </Box>
       </Box>
+
+      <Projects data={filteredData}  />
+
+
+      
     </>
   );
 };
