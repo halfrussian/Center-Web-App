@@ -31,6 +31,8 @@ const Nav = (props) => {
         <Header
           sx={{
             backgroundColor: "canvas.default",
+            paddingTop: '5',
+            paddingBottom: '5'
            // margin: ["auto", "auto", "auto", "auto 100px"],
           }}
           className="desktopHeader"

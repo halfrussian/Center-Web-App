@@ -11,7 +11,7 @@ const Projects = (props) => {
         sx={{
           backgroundColor: "canvas.default",
           paddingTop: 8,
-          maxWidth: "1220px",
+          maxWidth: "1400px",
           margin: "auto",
         }}
       >

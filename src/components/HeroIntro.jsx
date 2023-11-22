@@ -14,7 +14,7 @@ const HeroIntro = () => {
       >
         <Box
           sx={{
-            maxWidth: "1200px",
+            maxWidth: "1300px",
             width: ["90%", "90%", "90%", "95%", "87%"],
             margin: "auto",
             marginTop: 8,
@@ -25,6 +25,7 @@ const HeroIntro = () => {
             sx={{
               fontSize: 6,
               marginBottom: 3,
+              fontWeight: '700'
             }}
           >
             I’m Joshua Bracken UX/UI Designer and Developer
@@ -34,7 +35,6 @@ const HeroIntro = () => {
             sx={{
               fontSize: 3,
               color: "fg.default",
-              
             }}
           >
             Armed with the real world experience I was recently and Developer and UX Designer for Github. I specialize in implementing Design Thinking, within an Agile
