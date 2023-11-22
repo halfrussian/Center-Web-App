@@ -125,7 +125,12 @@ const FilteringProjects = () => {
           </Button>
         </Box>
       </Box>
-      <Projects data={filteredData}  />
+      <Projects 
+      
+      
+      data={filteredData} 
+      
+      />
     </>
   );
 };

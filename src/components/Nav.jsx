@@ -65,7 +65,7 @@ const Nav = (props) => {
             <Header.Link
               sx={{
                 fontSize: 3,
-                color: "fg.default",
+                color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
               href="/"
@@ -77,7 +77,7 @@ const Nav = (props) => {
             <Header.Link
               sx={{
                 fontSize: 3,
-                color: "fg.default",
+                color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
               href="/about"
@@ -89,7 +89,7 @@ const Nav = (props) => {
             <Header.Link
               sx={{
                 fontSize: 3,
-                color: "fg.default",
+                color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
             >
@@ -185,14 +185,14 @@ const Nav = (props) => {
           <ActionList.Item
             sx={{
               fontSize: 3,
-              color: "fg.default",
+              color: "fg.subtle",
               ":hover": { textDecoration: "none", color: "fg.muted" },
             }}
           >
             <Header.Link
               sx={{
                 fontSize: 3,
-                color: "fg.default",
+                color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
               href="/"
@@ -204,14 +204,14 @@ const Nav = (props) => {
           <ActionList.Item
             sx={{
               fontSize: 3,
-              color: "fg.default",
+              color: "fg.subtle",
               ":hover": { textDecoration: "none", color: "fg.muted" },
             }}
           >
             <Header.Link
               sx={{
                 fontSize: 3,
-                color: "fg.default",
+                color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
               href="/about"
@@ -231,7 +231,7 @@ const Nav = (props) => {
             <Header.Link
               sx={{
                 fontSize: 3,
-                color: "fg.default",
+                color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
             >
@@ -239,24 +239,7 @@ const Nav = (props) => {
             </Header.Link>
           </ActionList.Item>
           <ActionList.Divider />
-          {/* <ActionList.Item
-            sx={{
-              fontSize: 3,
-              color: "fg.default",
-              ":hover": { textDecoration: "none", color: "fg.muted" },
-            }}
-          >
-            <Header.Link
-              sx={{
-                fontSize: 3,
-                color: "fg.default",
-                ":hover": { textDecoration: "none", color: "fg.muted" },
-              }}
-              href="/interests"
-            >
-              Interests
-            </Header.Link>
-          </ActionList.Item> */}
+         
           
           <ActionList.Item className="actionMenuListItem">
             <Switch

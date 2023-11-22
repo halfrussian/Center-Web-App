@@ -4,6 +4,7 @@ import "../components/About.css";
 import Image from "../assets/heroimg.jpeg";
 import bImage from "../assets/belgium.png";
 import aboutImage from "../assets/about.png";
+import {useNavigate} from 'react-router-dom';
 
 const About = () => {
   return (
@@ -24,7 +25,6 @@ const About = () => {
             marginTop: 3,
           }}
         >
-          {/* FIX SPACING LATER  */}
           <div className="navigate">
             <Box sx={{ width: "300px"}}>
                 <div className="link"

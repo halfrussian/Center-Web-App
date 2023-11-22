@@ -1,11 +1,11 @@
 import React from "react";
 
-const Verizon = () => {
+const ErrorPage = () => {
     return (
         <>
-            Verizon
+            ErrorPage
         </>
     )
 }
 
-export default Verizon
+export default ErrorPage
