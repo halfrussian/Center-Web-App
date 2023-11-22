@@ -1,5 +1,13 @@
-.bvSWFT{
-
-   margin-bottom: 20px !important
-
+.link{
+   margin-bottom: 24px
 }
+
+@media screen and (max-width: 1399px) {
+   .navigate {
+      display: none;
+   }
+   .aboutBody {
+      width: 100%;
+   }
+}
+

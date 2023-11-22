@@ -41,13 +41,14 @@ const FilteringProjects = () => {
       >
         <Box
           sx={{
-            maxWidth: "1200px",
+            maxWidth: "1300px",
             width: ["90%", "90%", "90%", "95%", "87%"],
             margin: "auto",
             marginTop: 3,
           }}
         >
           <Button
+          
             sx={{
               padding: "5px 20px",
               textAlign: "center",
@@ -56,7 +57,7 @@ const FilteringProjects = () => {
               marginRight: 3,
               height: '40px',
               fontSize: 2,
-              backgroundColor: "canvas.default",
+              backgroundColor: "accent.muted",
             }}
             onClick={bTooBFilter}
           >
@@ -71,7 +72,7 @@ const FilteringProjects = () => {
               marginRight: 3,
               height: '40px',
               fontSize: 2,
-              backgroundColor: "canvas.default",
+              backgroundColor: "accent.muted",
             }}
             onClick={bTooCFilter}
           >
@@ -86,7 +87,7 @@ const FilteringProjects = () => {
               marginRight: 3,
               height: '40px',
               fontSize: 2,
-              backgroundColor: "canvas.default",
+              backgroundColor: "accent.muted",
             }}
             onClick={webFilter}
           >
@@ -101,7 +102,7 @@ const FilteringProjects = () => {
               marginRight: 3,
               height: '40px',
               fontSize: 2,
-              backgroundColor: "canvas.default",
+              backgroundColor: "accent.muted",
             }}
             onClick={mobileFilter}
           >
@@ -116,7 +117,7 @@ const FilteringProjects = () => {
               marginRight: 3,
               height: '40px',
               fontSize: 2,
-              backgroundColor: "canvas.default",
+              backgroundColor: "accent.muted",
             }}
             onClick={brandingFilter}
           >
