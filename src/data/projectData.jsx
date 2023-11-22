@@ -13,7 +13,7 @@ export const projectData = [
     {
         id: 2,
         image: trans,
-        categories: ['B2B', 'Mobile', 'Web'],
+        categories: ['B2B', 'Mobile', 'Web', 'Branding'],
         title: 'Transport Pro - Inspiring Clear & Confident Communication between Drivers, Load Managers and Brokers',
         desc: 'I proactively identified friction in load and driver discovery, proposed redesigning it, and helped prioritize it on the product roadmap.',
         link: '/transportpro'
