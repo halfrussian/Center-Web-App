@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Text,
   Header,
@@ -21,9 +21,36 @@ const Nav = (props) => {
   const [active, setActive] = useState(false);
 
   const handleCollapse = () => {
-    props.setThemeStyles(props.themeStyles === "dark" ? "light" : "dark");
-    setCheckered(!checkered);
+
+  if(localStorage.getItem('theme') === "dark") {
+    localStorage.setItem('theme', "light") 
+    props.setThemeStyles(localStorage.getItem("theme"))
+   setCheckered(false)
+  }  else if (localStorage.getItem('theme') === "light") {
+    localStorage.setItem('theme', 'dark')
+    props.setThemeStyles(localStorage.getItem("theme"))
+    setCheckered(true);
+  }
+
+  //initial value 
+    //props.setThemeStyles(props.themeStyles === "dark" ? "light" : "dark");
+    //setCheckered(!checkered);
   };
+
+
+  useEffect(() => {
+    if(localStorage.getItem('theme') === "dark") {
+      setCheckered(true)
+    }  else if (localStorage.getItem('theme') === "light") {
+      setCheckered(false);
+    }
+  }, [])
+ 
+
+
+  console.log(checkered)
+
+
 
   return (
     <>

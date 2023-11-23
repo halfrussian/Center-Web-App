@@ -115,7 +115,7 @@ const TransportPro = () => {
           }}
         >
           <div className="navigate ">
-            <Box sx={{ width: "300px" }}>
+            <Box sx={{ width: "300px", position: 'sticky' }}>
               <div style={{ marginBottom: "15px" }}>
                 <Text
                   sx={{

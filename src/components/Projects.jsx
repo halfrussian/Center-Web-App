@@ -3,8 +3,7 @@ import { Text, Heading, Box } from "@primer/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 const Projects = (props) => {
-  console.log(props);
-  console.log(props.data);
+ 
   const navigate = useNavigate();
   return (
     <>

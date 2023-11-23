@@ -1,5 +1,5 @@
 import { ThemeProvider, BaseStyles } from "@primer/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home";
@@ -16,7 +16,12 @@ import Github from './pages/Github'
 
 
 const App = () => {
-  const [themeStyles, setThemeStyles] = useState('light');
+  const [themeStyles, setThemeStyles] = useState(localStorage.getItem('theme') || 'light');
+
+  useEffect(() => {
+    localStorage.setItem('theme', themeStyles);
+  }, [themeStyles]);
+
 
   return (
     <ThemeProvider colorMode={themeStyles}>
