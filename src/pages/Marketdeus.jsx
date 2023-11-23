@@ -1,9 +1,10 @@
 import React from "react";
+import one from '../assets/market/one.webp'
 
 const Market = () => {
     return (
         <>
-            Market
+            <img src={one} />
         </>
     )
 }
