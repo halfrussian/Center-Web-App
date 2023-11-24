@@ -6,8 +6,8 @@ const Projects = (props) => {
  
   const navigate = useNavigate();
   return (
-    <>
-      <Box sx={{ maxWidth: "100%", backgroundColor: "canvas.default", paddingBottom: '10' }}>
+    <Box>
+      <Box sx={{ maxWidth: "100%", backgroundColor: "canvas.default", }}>
         <Box
           sx={{
             backgroundColor: "canvas.default",
@@ -74,7 +74,7 @@ const Projects = (props) => {
           </div>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };
 

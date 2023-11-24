@@ -26,7 +26,7 @@ const About = () => {
           }}
         >
           <div className="navigate">
-            <Box sx={{ width: "300px"}}>
+            <Box sx={{ width: "300px", position: 'sticky', top: 0}}>
                 <div className="link"
                 onClick = {(e)=>{
                     e.preventDefault();
@@ -36,7 +36,6 @@ const About = () => {
                  });}}
                 >
                 <Link
-                
                 sx={{
                   fontSize: "3",
                   color: "fg.muted",
@@ -46,8 +45,6 @@ const About = () => {
                 Why I Design
               </Link>
                 </div>
-              
-              
               <div className="link"
               onClick = {(e)=>{
                 e.preventDefault();
@@ -57,7 +54,6 @@ const About = () => {
              });}}
               >
               <Link
-                
                 sx={{
                   fontSize: "3",
                   color: "fg.muted",
@@ -67,9 +63,6 @@ const About = () => {
                  What I Love Designing
               </Link>
               </div>
-              
-               
-              
               <div className="link"
               onClick = {(e)=>{
                 e.preventDefault();
@@ -280,8 +273,7 @@ const About = () => {
                       All things exercise, travel, and health
                     </Heading>
                     <Text sx={{ fontSize: "20px" }}>
-                      Whether sparing at the gym, lifting weights, scaling rock
-                      walls, traversing global destinations, or preparing for a
+                      Whether sparing at the gym, lifting weights, snorkeling, traversing global destinations, or preparing for a
                       hypothetical zombie apocalypse, I embrace a multi-faceted
                       approach to life and hobbies. From 1 year dedicated to
                       training for a marathon to a half-year training to swim a

@@ -76,7 +76,7 @@ const Nav = (props) => {
               src={Image}
               sx={{ width: "48px", height: "48px", borderRadius: "50%" }}
             />
-            <Text
+             <Header.Link
               sx={{
                 fontSize: 3,
                 ml: 3,
@@ -84,9 +84,11 @@ const Nav = (props) => {
                 color: "fg.default",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
+              href="/"
             >
               Joshua Bracken
-            </Text>
+            </Header.Link>
+            
           </Header.Item>
           <Header.Item>
             <Header.Link

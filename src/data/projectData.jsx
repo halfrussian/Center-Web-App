@@ -3,14 +3,14 @@ import trans from '../assets/projectCardImages/trans.png'
 import market from '../assets/projectCardImages/market.png'
 
 export const projectData = [
-    {
-        id: 1,
-        image: github,
-        categories: ['B2B', 'B2C', 'Web', 'Branding'],
-        title: '',
-        desc: '',
-        link: '/github'
-    },
+    // {
+    //     id: 1,
+    //     image: github,
+    //     categories: ['B2B', 'B2C', 'Web', 'Branding'],
+    //     title: '',
+    //     desc: '',
+    //     link: '/github'
+    // },
     {
         id: 2,
         image: trans,
@@ -22,7 +22,7 @@ export const projectData = [
     {
         id: 3,
         image: market,
-        categories: ['B2B', 'Web'],
+        categories: ['B2B', 'Web', 'Branding'],
         title: 'Marketdeus - Streamlining the Email Marketing Process for Companies and their customers',
         desc: 'As the designer and developer for this marketing software, I played a pivotal strategic role, driving initiatives that doubled user retention in our A/B testing',
         link: '/market'
