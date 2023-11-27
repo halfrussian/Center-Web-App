@@ -11,7 +11,7 @@ import TransportPro from './pages/TransportPro'
 import KingMetals from './pages/KingMetals'
 import Market from './pages/Marketdeus'
 import Github from './pages/Github'
-
+import Clapper from './pages/Clapper'
 
 
 
@@ -36,7 +36,8 @@ const App = () => {
 
           <Route path='/github' element={<Github  />} />
           <Route path='/market' element={<Market  />} />
-          <Route path='/verizon' element={<Verizon  />} />
+          <Route path='/clapper' element={<Clapper  />} />
+          {/* <Route path='/verizon' element={<Verizon  />} /> */}
           <Route path='/vmart' element={<Vmart  />} />
           <Route path='/king' element={<KingMetals  />} />
           <Route path='/transportpro' element={<TransportPro  />} />

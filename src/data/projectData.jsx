@@ -2,7 +2,8 @@ import github from '../assets/projectCardImages/github.png'
 import trans from '../assets/projectCardImages/trans.png'
 import market from '../assets/projectCardImages/market.png'
 import king from '../assets/projectCardImages/king.png'
-
+import clap from '../assets/projectCardImages/clap.png'
+import ver from '../assets/projectCardImages/ver.png'
 
 export const projectData = [
     // {
@@ -37,5 +38,22 @@ export const projectData = [
         desc: 'I spearheaded the conceptualization and design of novel UI and frontend components, orchestrating a revitalization of the brand identity and enhancing the efficacy of the purchasing process.',
         link: '/king'
     },
+    // {
+    //     id: 5,
+    //     image: ver,
+    //     categories: ['B2B', 'Web', 'Branding'],
+    //     title: '',
+    //     desc: '',
+    //     link: '/verizon'
+    // },
+    {
+        id: 6,
+        image: clap,
+        categories: ['B2C', 'Mobile'],
+        title: 'Compassionate Platform Facilitating the Universal Expression of Diverse Perspectives Through Free Speech on Any Subject',
+        desc: 'Pioneering the inaugural research initiative for a groundbreaking social media application, I orchestrated conversation between large creators to discern the gaps within todays social media landscape.',
+        link: '/clapper'
+    }
+    
     
 ]
