@@ -229,7 +229,7 @@ const Verizon = () => {
                   <div className="container-fluid mb-5">
                     <div className="row">
                       <div className="col-12">
-                        <img src={one} className="img-fluid" />
+                        <img  className="img-fluid" />
                       </div>
                     </div>
                     <div className="row">

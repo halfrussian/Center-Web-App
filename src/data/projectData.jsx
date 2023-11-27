@@ -6,18 +6,18 @@ import clap from '../assets/projectCardImages/clap.png'
 import ver from '../assets/projectCardImages/ver.png'
 
 export const projectData = [
-    // {
-    //     id: 1,
-    //     image: github,
-    //     categories: ['B2B', 'B2C', 'Web', 'Branding'],
-    //     title: '',
-    //     desc: '',
-    //     link: '/github'
-    // },
+    {
+        id: 1,
+        image: github,
+        categories: ['B2B', 'B2C', 'Web', 'Branding'],
+        title: 'Github - Revamping the Support Portal to Facilitate the Resolution of Challenges Encountered by All Members of the GitHub Community',
+        desc: 'In overhauling the support portal, my focus is on user-centric design, ensuring intuitive navigation, responsive design across devices.. ',
+        link: '/github'
+    },
     {
         id: 2,
         image: trans,
-        categories: ['B2B', 'Mobile', 'Web', 'Branding'],
+        categories: ['B2B', 'Web', 'Branding'],
         title: 'Transport Pro - Inspiring Clear & Confident Communication between Drivers, Load Managers and Brokers',
         desc: 'I proactively identified friction in load and driver discovery, proposed redesigning it, and helped prioritize it on the product roadmap.',
         link: '/transportpro'
