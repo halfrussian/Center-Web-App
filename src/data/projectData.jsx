@@ -4,7 +4,8 @@ import market from '../assets/projectCardImages/market.png'
 import king from '../assets/projectCardImages/king.png'
 import clap from '../assets/projectCardImages/clap.png'
 import ver from '../assets/projectCardImages/ver.png'
-
+import vmart from '../assets/projectCardImages/vmart.png'
+ 
 export const projectData = [
     {
         id: 1,
@@ -38,14 +39,14 @@ export const projectData = [
         desc: 'I spearheaded the conceptualization and design of novel UI and frontend components, orchestrating a revitalization of the brand identity and enhancing the efficacy of the purchasing process.',
         link: '/king'
     },
-    // {
-    //     id: 5,
-    //     image: ver,
-    //     categories: ['B2B', 'Web', 'Branding'],
-    //     title: '',
-    //     desc: '',
-    //     link: '/verizon'
-    // },
+    {
+        id: 5,
+        image: vmart,
+        categories: ['B2C', 'Mobile', 'Web', 'Branding'],
+        title: 'Create readily available Vietnamese grocery items',
+        desc: ' Given the scarcity of Vietnamese markets, both in rural and urban locales, accessing specific ingredients poses a challenge. My objective revolves around crafting a responsive website, accessible to users of all ages, facilitating the seamless exploration and convenient ordering of Vietnamese groceries.',
+        link: '/vmart'
+    },
     {
         id: 6,
         image: clap,

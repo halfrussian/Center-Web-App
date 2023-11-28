@@ -384,7 +384,7 @@ const KingMetals = () => {
                      Sales on the rise and postive User feedback
                     </h3>
                     <p style={{ fontSize: "20px" }}>
-                    The updated UI resulted in a notable 4% boost in sales 
+                    The updated UI resulted in a notable 32% boost in sales 
                     within the initial months of release, with continued 
                     month-over-month growth. Positive user feedback has
                      been consistent, and both engagement and retention 

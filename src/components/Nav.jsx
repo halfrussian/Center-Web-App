@@ -121,6 +121,7 @@ const Nav = (props) => {
                 color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
+              onClick={()=> window.open("https://docs.google.com/document/d/1fAOEKDOFWi4oE_jYzXxOyxQRyLjfAoJlggPqkeKdcgY/edit?usp=sharing")}
             >
               Resume
             </Header.Link>
