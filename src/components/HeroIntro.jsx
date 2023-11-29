@@ -28,7 +28,7 @@ const HeroIntro = () => {
               fontWeight: '700'
             }}
           >
-            I’m Joshua Bracken UX Designer and Developer
+            I’m a strategic Product Designer (ex Github)
           </Heading>
 
           <Text
@@ -37,9 +37,9 @@ const HeroIntro = () => {
               color: "fg.default",
             }}
           >
-            Armed with the real world experience I was recently and Developer and UX Designer for Github. I specialize in implementing Design Thinking, within an Agile
+            Armed with the real world experience I was recently and Developer and Designer for Github. I specialize in implementing Design Thinking, within an Agile
             environment, for Saas, E-commerce, and Support Portal clients in
-            order to help improve their UX and UI. On a lighter note
+            order to help improve their UX and UI. On a lighter note Im a huge Dragon Ball fan and enjoy Virutal Reality Development for the Meta Quest.
           </Text>
           <Box sx={{
             paddingTop: 3,
