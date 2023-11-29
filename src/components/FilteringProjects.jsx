@@ -58,6 +58,7 @@ const FilteringProjects = () => {
               height: '40px',
               fontSize: 2,
               backgroundColor: "accent.muted",
+              marginBottom: 3
             }}
             onClick={bTooBFilter}
           >
@@ -72,7 +73,8 @@ const FilteringProjects = () => {
               marginRight: 3,
               height: '40px',
               fontSize: 2,
-              backgroundColor: "accent.muted",
+              backgroundColor: "accent.muted", 
+              marginBottom: 3
             }}
             onClick={bTooCFilter}
           >
@@ -88,6 +90,7 @@ const FilteringProjects = () => {
               height: '40px',
               fontSize: 2,
               backgroundColor: "accent.muted",
+              marginBottom: 3
             }}
             onClick={webFilter}
           >
@@ -103,6 +106,7 @@ const FilteringProjects = () => {
               height: '40px',
               fontSize: 2,
               backgroundColor: "accent.muted",
+              marginBottom: 3
             }}
             onClick={mobileFilter}
           >
@@ -118,6 +122,7 @@ const FilteringProjects = () => {
               height: '40px',
               fontSize: 2,
               backgroundColor: "accent.muted",
+              marginBottom: 3
             }}
             onClick={brandingFilter}
           >

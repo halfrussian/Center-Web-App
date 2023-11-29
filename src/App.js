@@ -28,7 +28,7 @@ const App = () => {
       <BaseStyles>
         <Nav themeStyles={themeStyles} setThemeStyles={setThemeStyles} />
       
-        <Router>
+        
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -49,7 +49,7 @@ const App = () => {
 
 
         </Routes>
-      </Router>
+     
       </BaseStyles>
     </ThemeProvider>
 

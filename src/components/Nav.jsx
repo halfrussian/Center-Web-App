@@ -15,42 +15,37 @@ import { ThreeBarsIcon } from "@primer/octicons-react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Nav = (props) => {
   const [checkered, setCheckered] = useState(false);
   const [active, setActive] = useState(false);
 
   const handleCollapse = () => {
+    if (localStorage.getItem("theme") === "dark") {
+      localStorage.setItem("theme", "light");
+      props.setThemeStyles(localStorage.getItem("theme"));
+      setCheckered(false);
+    } else if (localStorage.getItem("theme") === "light") {
+      localStorage.setItem("theme", "dark");
+      props.setThemeStyles(localStorage.getItem("theme"));
+      setCheckered(true);
+    }
 
-  if(localStorage.getItem('theme') === "dark") {
-    localStorage.setItem('theme', "light") 
-    props.setThemeStyles(localStorage.getItem("theme"))
-   setCheckered(false)
-  }  else if (localStorage.getItem('theme') === "light") {
-    localStorage.setItem('theme', 'dark')
-    props.setThemeStyles(localStorage.getItem("theme"))
-    setCheckered(true);
-  }
-
-  //initial value 
+    //initial value
     //props.setThemeStyles(props.themeStyles === "dark" ? "light" : "dark");
     //setCheckered(!checkered);
   };
 
-
   useEffect(() => {
-    if(localStorage.getItem('theme') === "dark") {
-      setCheckered(true)
-    }  else if (localStorage.getItem('theme') === "light") {
+    if (localStorage.getItem("theme") === "dark") {
+      setCheckered(true);
+    } else if (localStorage.getItem("theme") === "light") {
       setCheckered(false);
     }
-  }, [])
- 
+  }, []);
 
-
-  console.log(checkered)
-
-
+  const navigate = useNavigate();
 
   return (
     <>
@@ -76,7 +71,7 @@ const Nav = (props) => {
               src={Image}
               sx={{ width: "48px", height: "48px", borderRadius: "50%" }}
             />
-             <Header.Link
+            <Header.Link
               sx={{
                 fontSize: 3,
                 ml: 3,
@@ -88,7 +83,6 @@ const Nav = (props) => {
             >
               Joshua Bracken
             </Header.Link>
-            
           </Header.Item>
           <Header.Item>
             <Header.Link
@@ -109,9 +103,8 @@ const Nav = (props) => {
                 color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
-              href="/about"
             >
-              About
+              <div onClick={() => navigate("/about")}>About</div>
             </Header.Link>
           </Header.Item>
           <Header.Item>
@@ -121,7 +114,7 @@ const Nav = (props) => {
                 color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
-              onClick={()=> window.open("https://docs.google.com/document/d/1fAOEKDOFWi4oE_jYzXxOyxQRyLjfAoJlggPqkeKdcgY/edit?usp=sharing")}
+              onClick={()=> window.open("https://docs.google.com/document/d/1fAOEKDOFWi4oE_jYzXxOyxQRyLjfAoJlggPqkeKdcgY/edit")}
             >
               Resume
             </Header.Link>
@@ -244,9 +237,9 @@ const Nav = (props) => {
                 color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
-              href="/about"
+              
             >
-              About
+              <div onClick={() => navigate("/about")}>About</div>
             </Header.Link>
           </ActionList.Item>
           <ActionList.Divider />
@@ -264,13 +257,20 @@ const Nav = (props) => {
                 color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
               }}
+             
+               onClick={() => console.log('hello')}
             >
-              Resume
+              <div
+
+               onClick={()=> window.open("https://docs.google.com/document/d/1fAOEKDOFWi4oE_jYzXxOyxQRyLjfAoJlggPqkeKdcgY/edit")}
+              >
+Resume
+              </div>
+              
             </Header.Link>
           </ActionList.Item>
           <ActionList.Divider />
-         
-          
+
           <ActionList.Item className="actionMenuListItem">
             <Switch
               onChange={handleCollapse}

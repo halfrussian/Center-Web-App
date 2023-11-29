@@ -28,7 +28,7 @@ const HeroIntro = () => {
               fontWeight: '700'
             }}
           >
-            I’m Joshua Bracken UX/UI Designer and Developer
+            I’m Joshua Bracken UX Designer and Developer
           </Heading>
 
           <Text
