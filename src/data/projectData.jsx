@@ -35,8 +35,8 @@ export const projectData = [
         id: 4,
         image: king,
         categories: ['B2B', 'B2C', 'Web', 'Branding'],
-        title: 'King Metals - Comprehensively redesigning an e-commerce web application with the aim of optimizing and streamlining the purchasing workflow.',
-        desc: 'I spearheaded the conceptualization and design of novel UI and frontend components, orchestrating a revitalization of the brand identity and enhancing the efficacy of the purchasing process.',
+        title: 'King Metals - Redesigning an e-commerce site with the aim of streamlining the purchasing flow',
+        desc: 'I spearheaded the conceptualization and design of novel UI and frontend components, a revitalization of the brand and the efficiency of the purchasing process.',
         link: '/king'
     },
     {
