@@ -8,7 +8,7 @@ import {
   Tooltip,
   IconButton,
 } from "@primer/react";
-import Image from "../assets/heroimg.jpeg";
+import Image from "../assets/heroimg.webp";
 import Switch from "react-switch";
 import "./Nav.css";
 import { ThreeBarsIcon } from "@primer/octicons-react";

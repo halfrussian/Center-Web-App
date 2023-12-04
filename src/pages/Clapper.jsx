@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, Heading, Box, Link } from "@primer/react";
-import top from '../assets/clapper/top.png'
+import top from '../assets/clapper/top.webp'
 import sub from '../assets/clapper/sub.png'
 import clap from '../assets/logos/clap.png'
 import one from '../assets/clapper/one.png'

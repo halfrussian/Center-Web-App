@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, Heading, Box, Link } from "@primer/react";
-import top from '../assets/github/top.png'
+import top from '../assets/github/top.webp'
 import sub from '../assets/github/sub.png'
 import seven from '../assets/github/seven.png'
 import eight from '../assets/github/eight.png'

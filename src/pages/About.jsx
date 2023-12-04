@@ -1,8 +1,8 @@
 import React from "react";
 import { Text, Heading, Box, Link } from "@primer/react";
 import "../components/About.css";
-import Image from "../assets/heroimg.jpeg";
-import bImage from "../assets/belgium.png";
+import Image from "../assets/heroimg.webp";
+import bImage from "../assets/belgium.webp";
 import aboutImage from "../assets/about.png";
 import {useNavigate} from 'react-router-dom';
 

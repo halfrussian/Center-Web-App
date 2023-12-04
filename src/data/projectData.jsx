@@ -1,10 +1,10 @@
-import github from '../assets/projectCardImages/github.png'
-import trans from '../assets/projectCardImages/trans.png'
-import market from '../assets/projectCardImages/market.png'
-import king from '../assets/projectCardImages/king.png'
-import clap from '../assets/projectCardImages/clap.png'
+import github from '../assets/projectCardImages/github.webp'
+import trans from '../assets/projectCardImages/trans.webp'
+import market from '../assets/projectCardImages/market.webp'
+import king from '../assets/projectCardImages/king.webp'
+import clap from '../assets/projectCardImages/clap.webp'
 import ver from '../assets/projectCardImages/ver.png'
-import vmart from '../assets/projectCardImages/vmart.png'
+import vmart from '../assets/projectCardImages/vmart.webp'
  
 export const projectData = [
     {
