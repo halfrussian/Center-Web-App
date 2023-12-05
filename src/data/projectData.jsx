@@ -16,12 +16,29 @@ export const projectData = [
         link: '/github'
     },
     {
+        id: 6,
+        image: clap,
+        categories: ['B2C', 'Mobile'],
+        title: 'Clapper - A Platform Facilitating Freedom of Speech on Any Subject',
+        desc: 'Pioneering the inaugural research initiative for a groundbreaking social media app, I orchestrated the conversations to discern the gaps in todays social media landscape.',
+        link: '/clapper'
+    },
+    
+    {
         id: 2,
         image: trans,
         categories: ['B2B', 'Web', 'Branding'],
         title: 'Transport Pro - Inspiring Clear & Confident Communication between Drivers, Load Managers and Brokers',
         desc: 'I proactively identified friction in load and driver discovery, proposed redesigning it, and helped prioritize it on the product roadmap.',
         link: '/transportpro'
+    },
+    {
+        id: 5,
+        image: vmart,
+        categories: ['B2C', 'Mobile', 'Web', 'Branding'],
+        title: 'Create readily available Vietnamese grocery items',
+        desc: ' Given the scarcity of Vietnamese markets, both in rural and urban locales, accessing specific ingredients poses a challenge. My objective revolves around crafting a responsive website, accessible to users of all ages, facilitating the seamless exploration and convenient ordering of Vietnamese groceries.',
+        link: '/vmart'
     },
     {
         id: 3,
@@ -39,22 +56,7 @@ export const projectData = [
         desc: 'I spearheaded the conceptualization and design of novel UI and frontend components, a revitalization of the brand and the efficiency of the purchasing process.',
         link: '/king'
     },
-    {
-        id: 5,
-        image: vmart,
-        categories: ['B2C', 'Mobile', 'Web', 'Branding'],
-        title: 'Create readily available Vietnamese grocery items',
-        desc: ' Given the scarcity of Vietnamese markets, both in rural and urban locales, accessing specific ingredients poses a challenge. My objective revolves around crafting a responsive website, accessible to users of all ages, facilitating the seamless exploration and convenient ordering of Vietnamese groceries.',
-        link: '/vmart'
-    },
-    {
-        id: 6,
-        image: clap,
-        categories: ['B2C', 'Mobile'],
-        title: 'Compassionate Platform Facilitating the Universal Expression of Diverse Perspectives Through Free Speech on Any Subject',
-        desc: 'Pioneering the inaugural research initiative for a groundbreaking social media application, I orchestrated conversation between large creators to discern the gaps within todays social media landscape.',
-        link: '/clapper'
-    }
-    
+ 
+  
     
 ]
