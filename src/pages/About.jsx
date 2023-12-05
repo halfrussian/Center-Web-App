@@ -26,7 +26,7 @@ const About = () => {
           }}
         >
           <div className="navigate">
-            <Box sx={{ width: "300px", position: 'sticky', top: 0}}>
+            <Box sx={{ width: "300px", position: 'sticky', top: 5}}>
                 <div className="link"
                 onClick = {(e)=>{
                     e.preventDefault();
@@ -153,16 +153,22 @@ const About = () => {
                       inclusivity — principles that I Iacked growing up
                     </h3>
                     <p style={{ fontSize: "20px" }}>
-                      Growing up biracial, half black and half white, I never
-                      felt that there was a group of people to fit in with. I
-                      wasn’t black enough to fit in with black kids or white
-                      enough for white kids. Even things in society at the time
-                      of my childhood never catered to those who were mixed.
-                      Testing questions, at the time, never had “Two or more
-                      races.” They had Black, White, or Other. I always felt
-                      like an “Other”. Through designing, and developing for
-                      both myself and clients I’ve discovered myself more and
-                      strived to be inclusive in all projects I work on.
+                    In my formative years as an individual of biracial heritage,
+                     I encountered a distinct sense of not belonging to any specific
+                      social group. The nuanced challenge arose from not aligning 
+                      seamlessly with either of my communities of ancestry.
+                       <br />
+                       <div className="mt-3" />
+                       Furthermore, the societal landscape, during my upbringing,
+                        failed to acknowledge the existence of individuals of 
+                        mixed race, as evidenced by the absence of the category
+                         "Two or more races" in prevailing assessment inquiries. 
+                         Consequently, my identity often found itself relegated to 
+                         the nebulous classification of "Other."
+                         <div className="mt-3" />
+                      Through designing, and developing for
+                      both myself and clients I’ve discovered myself and
+                      strived to be inclusive and empathetic in all projects I work on.
                     </p>
                   </div>
                 </div>

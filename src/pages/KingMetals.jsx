@@ -105,7 +105,7 @@ const KingMetals = () => {
           }}
         >
           <div className="navigate ">
-            <Box sx={{ width: "300px", position: 'sticky', top: 0}}>
+            <Box sx={{ width: "300px", position: 'sticky', top: 5}}>
               <div style={{ marginBottom: "15px" }}>
                 <Text
                   sx={{
