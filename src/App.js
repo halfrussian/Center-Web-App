@@ -16,7 +16,7 @@ import Clapper from './pages/Clapper'
 
 
 const App = () => {
-  const [themeStyles, setThemeStyles] = useState(localStorage.getItem('theme') || 'light');
+  const [themeStyles, setThemeStyles] = useState(localStorage.getItem('theme') || 'dark');
 
   useEffect(() => {
     localStorage.setItem('theme', themeStyles);

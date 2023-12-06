@@ -16,6 +16,22 @@ export const projectData = [
         link: '/github'
     },
     {
+        id: 2,
+        image: trans,
+        categories: ['B2B', 'Web', 'Branding'],
+        title: 'Transport Pro - Inspiring Clear & Confident Communication between Drivers, Load Managers and Brokers',
+        desc: 'I proactively identified friction in load and driver discovery, proposed redesigning it, and helped prioritize it on the product roadmap.',
+        link: '/transportpro'
+    },
+    {
+        id: 4,
+        image: king,
+        categories: ['B2B', 'B2C', 'Web', 'Branding'],
+        title: 'King Metals - Redesigning an e-commerce site with the aim of streamlining the purchasing flow',
+        desc: 'I spearheaded the conceptualization and design of novel UI and frontend components, a revitalization of the brand and the efficiency of the purchasing process.',
+        link: '/king'
+    },
+    {
         id: 6,
         image: clap,
         categories: ['B2C', 'Mobile'],
@@ -24,14 +40,7 @@ export const projectData = [
         link: '/clapper'
     },
     
-    {
-        id: 2,
-        image: trans,
-        categories: ['B2B', 'Web', 'Branding'],
-        title: 'Transport Pro - Inspiring Clear & Confident Communication between Drivers, Load Managers and Brokers',
-        desc: 'I proactively identified friction in load and driver discovery, proposed redesigning it, and helped prioritize it on the product roadmap.',
-        link: '/transportpro'
-    },
+   
     {
         id: 5,
         image: vmart,
@@ -47,16 +56,5 @@ export const projectData = [
         title: 'Marketdeus - Streamlining the Email Marketing Process for Companies and their customers',
         desc: 'As the designer and developer for this marketing software, I played a pivotal strategic role, driving initiatives that doubled user retention in our A/B testing',
         link: '/market'
-    },
-    {
-        id: 4,
-        image: king,
-        categories: ['B2B', 'B2C', 'Web', 'Branding'],
-        title: 'King Metals - Redesigning an e-commerce site with the aim of streamlining the purchasing flow',
-        desc: 'I spearheaded the conceptualization and design of novel UI and frontend components, a revitalization of the brand and the efficiency of the purchasing process.',
-        link: '/king'
-    },
- 
-  
-    
+    }  
 ]
