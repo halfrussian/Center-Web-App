@@ -8,6 +8,8 @@ import sol2 from "../assets/trans/sol2.png";
 import sol3 from "../assets/trans/sol3.png";
 import sol4 from "../assets/trans/sol4.png";
 
+import Footer from '../components/Footer'
+
 const TransportPro = () => {
   return (
     <>
@@ -420,6 +422,7 @@ const TransportPro = () => {
           </div>
         </Box>
       </Box>
+      <Footer  />
     </>
   );
 };

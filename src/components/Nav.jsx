@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Nav = (props) => {
-  const [checkered, setCheckered] = useState(true);
+  const [checkered, setCheckered] = useState(false);
   const [active, setActive] = useState(false);
 
   const handleCollapse = () => {

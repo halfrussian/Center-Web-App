@@ -4,7 +4,7 @@ import "../components/About.css";
 import Image from "../assets/heroimg.webp";
 import bImage from "../assets/belgium.webp";
 import aboutImage from "../assets/about.png";
-import {useNavigate} from 'react-router-dom';
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -158,13 +158,8 @@ const About = () => {
                       social group. The nuanced challenge arose from not aligning 
                       seamlessly with either of my communities of ancestry.
                        <br />
-                       <div className="mt-3" />
-                       Furthermore, the societal landscape, during my upbringing,
-                        failed to acknowledge the existence of individuals of 
-                        mixed race, as evidenced by the absence of the category
-                         "Two or more races" in prevailing assessment inquiries. 
-                         Consequently, my identity often found itself relegated to 
-                         the nebulous classification of "Other."
+                       
+                     
                          <div className="mt-3" />
                       Through designing, and developing for
                       both myself and clients I’ve discovered myself and

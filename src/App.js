@@ -12,11 +12,12 @@ import KingMetals from './pages/KingMetals'
 import Market from './pages/Marketdeus'
 import Github from './pages/Github'
 import Clapper from './pages/Clapper'
+import Footer from "./components/Footer";
 
 
 
 const App = () => {
-  const [themeStyles, setThemeStyles] = useState(localStorage.getItem('theme') || 'dark');
+  const [themeStyles, setThemeStyles] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
     localStorage.setItem('theme', themeStyles);
@@ -49,8 +50,9 @@ const App = () => {
 
 
         </Routes>
-     
+   
       </BaseStyles>
+   
     </ThemeProvider>
 
     

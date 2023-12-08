@@ -6,7 +6,7 @@ import one from "../assets/market/one.webp";
 import two from "../assets/market/two.webp";
 import three from "../assets/market/three.webp";
 import four from "../assets/market/four.webp";
-
+import Footer from '../components/Footer'
 const Market = () => {
   return (
     <>
@@ -372,6 +372,7 @@ const Market = () => {
           </div>
         </Box>
       </Box>
+      <Footer  />
     </>
   );
 };

@@ -8,6 +8,7 @@ import two from '../assets/clapper/two.png'
 import three from '../assets/clapper/three.png'
 import ten from '../assets/clapper/ten.png'
 import el from '../assets/clapper/el.png'
+import Footer from '../components/Footer'
 
 const Clapper = () => {
     return (
@@ -398,6 +399,7 @@ Centering solely on the user experience, disregarding external influences such a
               </div>
             </Box>
           </Box>
+          <Footer  />
         </>
       );
     };

@@ -36,7 +36,7 @@ export const projectData = [
         image: clap,
         categories: ['B2C', 'Mobile'],
         title: 'Clapper - A Platform Facilitating Freedom of Speech on Any Subject',
-        desc: 'Pioneering the inaugural research initiative for a groundbreaking social media app, I orchestrated the conversations to discern the gaps in todays social media landscape.',
+        desc: 'Pioneering the research initiative for a groundbreaking social media app, I orchestrated the conversations to discern the gaps in todays social media landscape.',
         link: '/clapper'
     },
     
@@ -45,8 +45,8 @@ export const projectData = [
         id: 5,
         image: vmart,
         categories: ['B2C', 'Mobile', 'Web', 'Branding'],
-        title: 'Create readily available Vietnamese grocery items',
-        desc: ' Given the scarcity of Vietnamese markets, both in rural and urban locales, accessing specific ingredients poses a challenge. My objective revolves around crafting a responsive website, accessible to users of all ages, facilitating the seamless exploration and convenient ordering of Vietnamese groceries.',
+        title: 'V-Mart - Creating readily available Vietnamese grocery items',
+        desc: ' Given the scarcity of Vietnamese markets, both in rural and urban locales, accessing specific ingredients poses a challenge. Objective? Facilitate convenience of Vietnamese groceries.',
         link: '/vmart'
     },
     {

@@ -10,6 +10,8 @@ import three from "../assets/king/three.png"
 import four from "../assets/king/four.png"
 import five from "../assets/king/five.png"
 
+import Footer from '../components/Footer'
+
 const KingMetals = () => {
   return (
     <>
@@ -398,6 +400,7 @@ const KingMetals = () => {
           </div>
         </Box>
       </Box>
+      <Footer  />
     </>
   );
 };

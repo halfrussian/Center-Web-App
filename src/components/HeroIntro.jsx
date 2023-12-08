@@ -37,9 +37,9 @@ const HeroIntro = () => {
               color: "fg.default",
             }}
           >
-            Armed with the real world experience I was recently a Developer and Designer for Github. I specialize in implementing Design Thinking, within an Agile
-            environment, for Saas, E-commerce, and Support Portal clients in
-            order to help improve their UX and UI. On a lighter note Im a huge Dragon Ball fan and enjoy Virutal Reality Development for the Meta Quest.
+            Armed with the real world experience I was recently a UX Designer for Github. I specialize in implementing System Thinking, within an Agile
+            environment, for Saas, E-commerce, CRM Databases, Support Portals and more.
+            And if clients are low on developers I help them code as well. On a lighter note, in my spare time I experiment in developing for the MetaQuest and Apple Vision Pro.
           </Text>
           <Box sx={{
             paddingTop: 3,

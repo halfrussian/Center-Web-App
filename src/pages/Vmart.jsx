@@ -9,6 +9,8 @@ import frame from "../assets/vmart/frame.png";
 import el from "../assets/vmart/el.png";
 import it from "../assets/vmart/it.jpeg";
 
+import Footer from '../components/Footer'
+
 const Vmart = () => {
   return (
     <>
@@ -493,6 +495,7 @@ const Vmart = () => {
           </div>
         </Box>
       </Box>
+      <Footer  />
     </>
   );
 };

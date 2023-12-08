@@ -6,7 +6,7 @@ import seven from '../assets/github/seven.png'
 import eight from '../assets/github/eight.png'
 import el from '../assets/github/el.png'
 import ten from '../assets/github/ten.png'
-
+import Footer from '../components/Footer'
 
 
 const Github = () => {
@@ -393,6 +393,7 @@ const Github = () => {
               </div>
             </Box>
           </Box>
+          <Footer  />
         </>
       );
     };
