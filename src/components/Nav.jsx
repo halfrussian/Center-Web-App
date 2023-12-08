@@ -93,7 +93,19 @@ const Nav = (props) => {
               }}
               href="/"
             >
-              Home
+              Design
+            </Header.Link>
+          </Header.Item>
+          
+          <Header.Item>
+            <Header.Link
+              sx={{
+                fontSize: 3,
+                color: "fg.subtle",
+                ":hover": { textDecoration: "none", color: "fg.muted" },
+              }}
+            >
+              <div onClick={() => navigate("/dev")}>Development</div>
             </Header.Link>
           </Header.Item>
           <Header.Item>
@@ -119,18 +131,7 @@ const Nav = (props) => {
               Resume
             </Header.Link>
           </Header.Item>
-          {/* <Header.Item>
-            <Header.Link
-              sx={{
-                fontSize: 3,
-                color: "fg.default",
-                ":hover": { textDecoration: "none", color: "fg.muted" },
-              }}
-              href='/interests'
-            >
-              Interests
-            </Header.Link>
-          </Header.Item> */}
+          
           <Header.Item>
             <Header.Link sx={{ fontSize: 3 }}>
               <Switch
@@ -220,9 +221,29 @@ const Nav = (props) => {
               }}
               href="/"
             >
-              Home
+              Design
             </Header.Link>
           </ActionList.Item>
+          <ActionList.Divider />
+          <ActionList.Item
+            sx={{
+              fontSize: 3,
+              color: "fg.subtle",
+              ":hover": { textDecoration: "none", color: "fg.muted" },
+            }}
+          >
+            <Header.Link
+              sx={{
+                fontSize: 3,
+                color: "fg.subtle",
+                ":hover": { textDecoration: "none", color: "fg.muted" },
+              }}
+              
+            >
+              <div onClick={() => navigate("/dev")}>Development</div>
+            </Header.Link>
+          </ActionList.Item>
+          
           <ActionList.Divider />
           <ActionList.Item
             sx={{

@@ -13,6 +13,7 @@ import Market from './pages/Marketdeus'
 import Github from './pages/Github'
 import Clapper from './pages/Clapper'
 import Footer from "./components/Footer";
+import Dev from "./pages/Development";
 
 
 
@@ -42,7 +43,7 @@ const App = () => {
           <Route path='/vmart' element={<Vmart  />} />
           <Route path='/king' element={<KingMetals  />} />
           <Route path='/transportpro' element={<TransportPro  />} />
-          
+          <Route path='/dev' element={<Dev />} />
 
 
 
