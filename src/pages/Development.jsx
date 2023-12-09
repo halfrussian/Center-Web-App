@@ -8,7 +8,10 @@ import think from "../assets/devCardIm/think.png";
 import newer from '../assets/devCardIm/new.png'
 import port from "../assets/devCardIm/port.png";
 import land from '../assets/devCardIm/land.png'
+import paper from '../assets/devCardIm/paper.png'
+import lib from '../assets/devCardIm/lib.png'
 
+import vid from '../assets/vmart/vid.mp4'
 const Dev = () => {
   return (
     <>
@@ -195,8 +198,7 @@ const Dev = () => {
                       style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
                     ></h3>
                     <p style={{ fontSize: "20px" }}>
-                      Despite offering a virtual array encompassing metallic
-                      products, King Metals encountered significant
+                    
                     </p>
                   </div>
                 </div>
@@ -207,6 +209,7 @@ const Dev = () => {
                       <Box
                         sx={{
                           backgroundColor: "canvas.default",
+                          border: '1px',
                           borderRadius: 6,
                           borderStyle: "solid",
                           borderColor: "border.default",
@@ -230,14 +233,15 @@ const Dev = () => {
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://ecommerce-store-comfy.netlify.app/')}
+                             
                             >
                               Live Demo
                             </Button>
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://github.com/halfrussian/React.js-Ecommerce-Furniture-Store')}
                             >
                               Code
                             </Button>
@@ -254,6 +258,7 @@ const Dev = () => {
                       <Box
                         sx={{
                           backgroundColor: "canvas.default",
+                          border: '1px',
                           borderRadius: 6,
                           borderStyle: "solid",
                           borderColor: "border.default",
@@ -277,14 +282,14 @@ const Dev = () => {
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://nasa-x-spacex.netlify.app/')}
                             >
                               Live Demo
                             </Button>
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://github.com/halfrussian/Nasa-X-SpaceX-React-')}
                             >
                               Code
                             </Button>
@@ -301,6 +306,7 @@ const Dev = () => {
                       <Box
                         sx={{
                           backgroundColor: "canvas.default",
+                          border: '1px',
                           borderRadius: 6,
                           borderStyle: "solid",
                           borderColor: "border.default",
@@ -324,14 +330,14 @@ const Dev = () => {
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://money-works-stock-app.netlify.app/')}
                             >
                               Live Demo
                             </Button>
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://github.com/halfrussian/React.js-Stock-Market-Application')}
                             >
                               Code
                             </Button>
@@ -350,6 +356,7 @@ const Dev = () => {
                       <Box
                         sx={{
                           backgroundColor: "canvas.default",
+                          border: '1px',
                           borderRadius: 6,
                           borderStyle: "solid",
                           borderColor: "border.default",
@@ -373,17 +380,11 @@ const Dev = () => {
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://joshuabracken.netlify.app/')}
                             >
                               Live Demo
                             </Button>
-                            <Button
-                              variant="outline"
-                              sx={{ mr: 3 }}
-                              onClick={() => window.open()}
-                            >
-                              Code
-                            </Button>
+                           
                           </div>
                         </div>
                       </Box>
@@ -397,6 +398,7 @@ const Dev = () => {
                       <Box
                         sx={{
                           backgroundColor: "canvas.default",
+                          border: '1px',
                           borderRadius: 6,
                           borderStyle: "solid",
                           borderColor: "border.default",
@@ -420,17 +422,96 @@ const Dev = () => {
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://codepen.io/halfrussian/pen/GREoEGQ')}
                             >
                               Live Demo
                             </Button>
+                            
+                          </div>
+                        </div>
+                      </Box>
+                    </div>
+                  </div>
+
+                  {/* CARD  COL END */}
+
+                  {/* CARD  COL */}
+                  <div className="col-xl-4  col-md-6 col-sm-12">
+                    <div className="card mt-3 mb-3" style={{ border: "none" }}>
+                      <Box
+                        sx={{
+                          backgroundColor: "canvas.default",
+                          border: '1px',
+                          borderRadius: 6,
+                          borderStyle: "solid",
+                          borderColor: "border.default",
+                        }}
+                      >
+                        <img
+                          style={{ objectFit: "cover", height: "200px" }}
+                          className="card-img-top"
+                          src={paper}
+                          alt=""
+                        />
+                        <div className="card-body">
+                          <Text sx={{ color: "fg.default" }}>
+                            Newspaper in the Park
+                          </Text>
+                          <br />
+                          <Text sx={{ color: "fg.default" }}>
+                            HTML, CSS, Javascript
+                          </Text>
+                          <div className=" d-flex mt-3">
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://codepen.io/halfrussian/pen/rNwGmvv')}
                             >
-                              Code
+                              Live Demo
                             </Button>
+                           
+                          </div>
+                        </div>
+                      </Box>
+                    </div>
+                  </div>
+
+                  {/* CARD  COL END */}
+                                    {/* CARD  COL */}
+                                    <div className="col-xl-4  col-md-6 col-sm-12">
+                    <div className="card mt-3 mb-3" style={{ border: "none" }}>
+                      <Box
+                        sx={{
+                          backgroundColor: "canvas.default",
+                          border: '1px',
+                          borderRadius: 6,
+                          borderStyle: "solid",
+                          borderColor: "border.default",
+                        }}
+                      >
+                        <img
+                          style={{ objectFit: "cover", height: "200px" }}
+                          className="card-img-top"
+                          src={lib}
+                          alt=""
+                        />
+                        <div className="card-body">
+                          <Text sx={{ color: "fg.default" }}>
+                            Library Card
+                          </Text>
+                          <br />
+                          <Text sx={{ color: "fg.default" }}>
+                            HTML, CSS, Javascript
+                          </Text>
+                          <div className=" d-flex mt-3">
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://codepen.io/halfrussian/pen/vYZKbJv')}
+                            >
+                              Live Demo
+                            </Button>
+                           
                           </div>
                         </div>
                       </Box>
@@ -485,6 +566,7 @@ const Dev = () => {
                       <Box
                         sx={{
                           backgroundColor: "canvas.default",
+                          border: '1px',
                           borderRadius: 6,
                           borderStyle: "solid",
                           borderColor: "border.default",
@@ -505,17 +587,11 @@ const Dev = () => {
                             React Native, React Native Paper 
                           </Text>
                           <div className=" d-flex mt-3">
+                            
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
-                            >
-                              Live Demo
-                            </Button>
-                            <Button
-                              variant="outline"
-                              sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://github.com/halfrussian/React-Native-Media-Literacy')}
                             >
                               Code
                             </Button>
@@ -532,6 +608,7 @@ const Dev = () => {
                       <Box
                         sx={{
                           backgroundColor: "canvas.default",
+                          border: '1px',
                           borderRadius: 6,
                           borderStyle: "solid",
                           borderColor: "border.default",
@@ -555,14 +632,14 @@ const Dev = () => {
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://codepen.io/halfrussian/pen/xxLQWvX')}
                             >
                               Live Demo
                             </Button>
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open()}
+                              onClick={() => window.open('https://github.com/halfrussian/Focus-App-React-Native')}
                             >
                               Code
                             </Button>
@@ -573,6 +650,7 @@ const Dev = () => {
                   </div>
 
                   {/* CARD  COL END */}
+                  
                 </div>
               </div>
 
@@ -584,20 +662,69 @@ const Dev = () => {
                       sx={{
                         fontSize: "20px",
                         color: "fg.muted",
-                        mt: "6",
-                        mb: "2",
+                        mt: 6,
+                        mb: 6,
                       }}
                     >
                       Meta Quest 2
                     </Text>
-                    <h3
-                      style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
-                    ></h3>
-                    <p style={{ fontSize: "20px" }}></p>
+                    
+                
                   </div>
                 </div>
+                <div className="row">
+                {/* CARD  COL */}
+                <div className="col-xl-4 col-md-6 col-sm-12">
+                    <div className="card mt-3 mb-3" style={{ border: "none" }}>
+                      <Box
+                        sx={{
+                          backgroundColor: "canvas.default",
+                          border: '1px',
+                          borderRadius: 6,
+                          borderStyle: "solid",
+                          borderColor: "border.default",
+                        }}
+                      >
+                        <img
+                          style={{ objectFit: "cover", height: "200px" }}
+                          className="card-img-top"
+                          src={'https://private-user-images.githubusercontent.com/84690420/289186609-c9c43a46-6b78-4573-b589-2f8686b0ece7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDIwODQ5MDAsIm5iZiI6MTcwMjA4NDYwMCwicGF0aCI6Ii84NDY5MDQyMC8yODkxODY2MDktYzljNDNhNDYtNmI3OC00NTczLWI1ODktMmY4Njg2YjBlY2U3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjA5VDAxMTY0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThkZDZiZGYwN2Q3MDY4NGJkNjIyNWE1MmMyZTEyY2Q3NzkwMzIzNmQ5NTVlMmY3MzE3NDdmMDBhNjUxYTc5YTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.vuv8uX5BQfR_i3FVDyeGErVHTS1Vg2vxbwvO3Vxi8PA'}
+                          alt=""
+                        />
+                        <div className="card-body">
+                          <Text sx={{ color: "fg.default" }}>
+                            Focus App
+                          </Text>
+                          <br />
+                          <Text sx={{ color: "fg.default" }}>
+                          React Native, React Native Paper 
+                          </Text>
+                          <div className=" d-flex mt-3">
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://www.youtube.com/watch?v=DiYHHVtMCbk')}
+                            >
+                              Live Demo
+                            </Button>
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://github.com/halfrussian/Virtual-Reality---SaveTheEarth---MetaQuest2')}
+                            >
+                              Code
+                            </Button>
+                          </div>
+                        </div>
+                      </Box>
+                    </div>
+                  </div>
+
+                  {/* CARD  COL END */}
+                
+                </div>
               </div>
-              <div className="container-fluid"></div>
+              
 
               <div className="container-fluid mb-5">
                 <div className="row">
