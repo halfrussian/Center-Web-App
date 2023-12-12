@@ -1,3 +1,7 @@
+//edit to menino taht i developer and esigned all 
+
+
+
 import React from "react";
 import Footer from "../components/Footer";
 import { Text, Heading, Box, Link, Button } from "@primer/react";
@@ -10,8 +14,7 @@ import port from "../assets/devCardIm/port.png";
 import land from '../assets/devCardIm/land.png'
 import paper from '../assets/devCardIm/paper.png'
 import lib from '../assets/devCardIm/lib.png'
-
-import vid from '../assets/vmart/vid.mp4'
+import vr from '../assets/devCardIm/vr.png'
 const Dev = () => {
   return (
     <>
@@ -39,7 +42,7 @@ const Dev = () => {
               fontWeight: "700",
             }}
           >
-            Who said UX Designers cant code?
+            I'm an enthusiastic Developer 
           </Heading>
 
           <Text
@@ -48,6 +51,8 @@ const Dev = () => {
               color: "fg.default",
             }}
           >
+            Many designers shy away from coding. Not me. My career, and my life, reflects this motto:<br  />
+            
             "While specialization breeds expertise, true mastery is born from
             the cross-pollination of knowledge across diverse fields." -
             Leonardo da Vinci
@@ -183,6 +188,9 @@ const Dev = () => {
               <div className="container-fluid">
                 <div className="row">
                   <div className="col-12" id="problem">
+                  <h3
+                      style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
+                    > Personal projects I've designed and developed</h3>
                     <Text
                       as="h2"
                       sx={{
@@ -194,9 +202,7 @@ const Dev = () => {
                     >
                       Web
                     </Text>
-                    <h3
-                      style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
-                    ></h3>
+                    
                     <p style={{ fontSize: "20px" }}>
                     
                     </p>
@@ -688,16 +694,16 @@ const Dev = () => {
                         <img
                           style={{ objectFit: "cover", height: "200px" }}
                           className="card-img-top"
-                          src={'https://private-user-images.githubusercontent.com/84690420/289186609-c9c43a46-6b78-4573-b589-2f8686b0ece7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDIwODQ5MDAsIm5iZiI6MTcwMjA4NDYwMCwicGF0aCI6Ii84NDY5MDQyMC8yODkxODY2MDktYzljNDNhNDYtNmI3OC00NTczLWI1ODktMmY4Njg2YjBlY2U3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjA5VDAxMTY0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThkZDZiZGYwN2Q3MDY4NGJkNjIyNWE1MmMyZTEyY2Q3NzkwMzIzNmQ5NTVlMmY3MzE3NDdmMDBhNjUxYTc5YTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.vuv8uX5BQfR_i3FVDyeGErVHTS1Vg2vxbwvO3Vxi8PA'}
+                          src={vr}
                           alt=""
                         />
                         <div className="card-body">
                           <Text sx={{ color: "fg.default" }}>
-                            Focus App
+                            Save the Earth from Asteroids
                           </Text>
                           <br />
                           <Text sx={{ color: "fg.default" }}>
-                          React Native, React Native Paper 
+                          C#, Unity, XRToolkit
                           </Text>
                           <div className=" d-flex mt-3">
                             <Button
