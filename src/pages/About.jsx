@@ -42,7 +42,7 @@ const About = () => {
                   ":hover": { cursor: "pointer" },
                 }}
               >
-                Why I Design
+                Why I Design 
               </Link>
                 </div>
               <div className="link"

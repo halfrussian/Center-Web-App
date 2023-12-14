@@ -1,7 +1,4 @@
 //edit to menino taht i developer and esigned all 
-
-
-
 import React from "react";
 import Footer from "../components/Footer";
 import { Text, Heading, Box, Link, Button } from "@primer/react";
@@ -51,7 +48,7 @@ const Dev = () => {
               color: "fg.default",
             }}
           >
-            Many designers shy away from coding. Not me. My career, and my life, reflects this motto:<br  />
+            Many designers shy away from coding. Not me. My career, and my life, reflect this motto:<br  />
             
             "While specialization breeds expertise, true mastery is born from
             the cross-pollination of knowledge across diverse fields." -
@@ -229,11 +226,11 @@ const Dev = () => {
                         />
                         <div className="card-body">
                           <Text sx={{ color: "fg.default" }}>
-                            E-Commerce Furniture
+                            Commerce Furniture
                           </Text>
                           <br />
                           <Text sx={{ color: "fg.default" }}>
-                            React, Bootstrap, SCSS
+                            React, Javascript, Bootstrap, SCSS
                           </Text>
                           <div className=" d-flex mt-3">
                             <Button
@@ -282,7 +279,7 @@ const Dev = () => {
                           </Text>
                           <br />
                           <Text sx={{ color: "fg.default" }}>
-                            React, CSS 
+                            React, Javascript,  CSS 
                           </Text>
                           <div className=" d-flex mt-3">
                             <Button
@@ -330,7 +327,7 @@ const Dev = () => {
                           </Text>
                           <br />
                           <Text sx={{ color: "fg.default" }}>
-                            React, Bootstrap, SCSS
+                            React, Javascript,  Bootstrap, SCSS
                           </Text>
                           <div className=" d-flex mt-3">
                             <Button
@@ -380,7 +377,7 @@ const Dev = () => {
                           </Text>
                           <br />
                           <Text sx={{ color: "fg.default" }}>
-                            React, Primer
+                            React, Javascript,  Primer
                           </Text>
                           <div className=" d-flex mt-3">
                             <Button
@@ -579,7 +576,7 @@ const Dev = () => {
                         }}
                       >
                         <img
-                          style={{ objectFit: "cover", height: "700px" }}
+                          style={{ objectFit: "cover", height: "200px" }}
                           className="card-img-top"
                           src={newer}
                           alt=""
@@ -590,7 +587,7 @@ const Dev = () => {
                           </Text>
                           <br />
                           <Text sx={{ color: "fg.default" }}>
-                            React Native, React Native Paper 
+                            React Native,  Javascript,  Native Paper 
                           </Text>
                           <div className=" d-flex mt-3">
                             
@@ -621,8 +618,8 @@ const Dev = () => {
                         }}
                       >
                         <img
-                          style={{ objectFit: "cover", height: "700px" }}
-                          className="card-img-top"
+                         style={{ objectFit: "cover", height: "200px" }}
+                         className="card-img-top"
                           src={think}
                           alt=""
                         />
@@ -632,7 +629,7 @@ const Dev = () => {
                           </Text>
                           <br />
                           <Text sx={{ color: "fg.default" }}>
-                          React Native, React Native Paper 
+                          React Native,  Javascript,  React Native Paper 
                           </Text>
                           <div className=" d-flex mt-3">
                             <Button

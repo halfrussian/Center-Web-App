@@ -32,22 +32,24 @@ const App = () => {
       
         
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/interests' element={<Interests />} />
 
-          <Route path='/github' element={<Github  />} />
-          <Route path='/market' element={<Market  />} />
-          <Route path='/clapper' element={<Clapper  />} />
+          <Route exact path='/' element={<Home />} />
+           
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/interests' element={<Interests />} />
+
+          <Route exact path='/github' element={<Github  />} />
+          <Route exact path='/market' element={<Market  />} />
+          <Route exact path='/clapper' element={<Clapper  />} />
           {/* <Route path='/verizon' element={<Verizon  />} /> */}
-          <Route path='/vmart' element={<Vmart  />} />
-          <Route path='/king' element={<KingMetals  />} />
-          <Route path='/transportpro' element={<TransportPro  />} />
-          <Route path='/dev' element={<Dev />} />
+          <Route exact path='/vmart' element={<Vmart  />} />
+          <Route exact path='/king' element={<KingMetals  />} />
+          <Route exact path='/transportpro' element={<TransportPro  />} />
+          <Route exact path='/dev' element={<Dev />} />
 
 
 
-          <Route path='*' element={<Home />}/>
+          <Route exact path='*' element={<Home />}/>
 
 
         </Routes>
