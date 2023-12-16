@@ -7,6 +7,7 @@ import sol1 from "../assets/trans/sol1.png";
 import sol2 from "../assets/trans/sol2.png";
 import sol3 from "../assets/trans/sol3.png";
 import sol4 from "../assets/trans/sol4.png";
+import bio from "../assets/trans/tranport.png"
 
 import Footer from '../components/Footer'
 
@@ -320,6 +321,12 @@ const TransportPro = () => {
                       our redefined platform, concurrently uplifting user
                       engagement and team spirit.
                     </p>
+                  </div>
+                </div>
+                
+                <div className="row mb-5">
+                  <div className="col-12">
+                    <img src={bio} className="img-fluid" />
                   </div>
                 </div>
               </div>

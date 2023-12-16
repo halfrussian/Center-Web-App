@@ -8,6 +8,8 @@ import two from '../assets/clapper/two.png'
 import three from '../assets/clapper/three.png'
 import ten from '../assets/clapper/ten.png'
 import el from '../assets/clapper/el.png'
+import clapmap from '../assets/clapper/clapmap.png'
+import clapuser from '../assets/clapper/clapuser.png'
 import Footer from '../components/Footer'
 
 const Clapper = () => {
@@ -276,6 +278,16 @@ const Clapper = () => {
                   </div>
     
                   <div className="container-fluid">
+                  <div className="row mb-5">
+                      <div className="col-12 ">
+                        <img src={clapuser} className="img-fluid" />
+                      </div>
+                    </div>
+                    <div className="row mb-5">
+                      <div className="col-12 ">
+                        <img src={clapmap} className="img-fluid" />
+                      </div>
+                    </div>
                     <div className="row">
                       <div className="col-12" id="goals">
                         <Text
