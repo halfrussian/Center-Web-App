@@ -283,7 +283,7 @@ const Nav = (props) => {
             >
               <div
 
-               onClick={()=> window.open("https://docs.google.com/document/d/1fAOEKDOFWi4oE_jYzXxOyxQRyLjfAoJlggPqkeKdcgY/edit")}
+               onClick={()=> window.open("https://docs.google.com/document/d/1fAOEKDOFWi4oE_jYzXxOyxQRyLjfAoJlggPqkeKdcgY/edit?usp=sharing")}
               >
 Resume
               </div>

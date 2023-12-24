@@ -8,14 +8,6 @@ import vmart from '../assets/projectCardImages/vmart.webp'
  
 export const projectData = [
     {
-        id: 5,
-        image: vmart,
-        categories: ['B2C', 'Mobile', 'Web', 'Branding'],
-        title: 'V-Mart - Creating readily available Vietnamese grocery products not typically available in surrounding markets',
-        desc: ' Given the scarcity of Vietnamese markets, both in rural and urban locales, accessing specific ingredients poses a challenge. Objective? Facilitate convenience of Vietnamese groceries.',
-        link: '/vmart'
-    },
-    {
         id: 1,
         image: github,
         categories: ['B2B', 'B2C', 'Web', 'Branding'],
@@ -23,6 +15,15 @@ export const projectData = [
         desc: 'In overhauling the support portal, my focus is on user-centric design, ensuring intuitive navigation, responsive design across devices.. ',
         link: '/github'
     },
+    {
+        id: 5,
+        image: vmart,
+        categories: ['B2C', 'Mobile', 'Web', 'Branding'],
+        title: 'V-Mart - Creating readily available Vietnamese grocery products not typically available in surrounding markets',
+        desc: ' Given the scarcity of Vietnamese markets, both in rural and urban locales, accessing specific ingredients poses a challenge. Objective? Facilitate convenience of Vietnamese groceries.',
+        link: '/vmart'
+    },
+
     {
         id: 2,
         image: trans,

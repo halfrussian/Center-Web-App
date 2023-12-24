@@ -12,6 +12,9 @@ import land from '../assets/devCardIm/land.png'
 import paper from '../assets/devCardIm/paper.png'
 import lib from '../assets/devCardIm/lib.png'
 import vr from '../assets/devCardIm/vr.png'
+import appro from '../assets/devCardIm/appro.png'
+import one from '../assets/king/one.png'
+
 const Dev = () => {
   return (
     <>
@@ -93,7 +96,9 @@ const Dev = () => {
                 >
                   Overview
                 </Text>
+                <hr style={{ maxWidth: "200px" }} />
               </div>
+             
 
               <div
                 className="link"
@@ -176,18 +181,25 @@ const Dev = () => {
                 >
                   Apple Vision Pro
                 </Link>
-                <hr style={{ maxWidth: "200px" }} />
+                
               </div>
+              
             </Box>
           </div>
           <div className="aboutBody">
             <Box>
               <div className="container-fluid">
+
+                <div className="row">
+                <h3
+                      style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
+                    > Personal projects I've developed</h3>
+                </div>
+                
+                
                 <div className="row">
                   <div className="col-12" id="problem">
-                  <h3
-                      style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
-                    > Personal projects I've designed and developed</h3>
+                 
                     <Text
                       as="h2"
                       sx={{
@@ -206,6 +218,7 @@ const Dev = () => {
                   </div>
                 </div>
                 <div className="row">
+
                   {/* CARD  COL */}
                   <div className="col-xl-4  col-md-6 col-sm-12">
                     <div className="card mt-3 mb-3" style={{ border: "none" }}>
@@ -255,6 +268,7 @@ const Dev = () => {
                   </div>
 
                   {/* CARD  COL END */}
+                 
                   {/* CARD  COL */}
                   <div className="col-xl-4  col-md-6 col-sm-12">
                     <div className="card mt-3 mb-3" style={{ border: "none" }}>
@@ -351,6 +365,7 @@ const Dev = () => {
                   </div>
 
                   {/* CARD  COL END */}
+                  
                 </div>
                 <div className="row">
                   {/* CARD  COL */}
@@ -395,6 +410,7 @@ const Dev = () => {
                   </div>
 
                   {/* CARD  COL END */}
+                   
                   {/* CARD  COL */}
                   <div className="col-xl-4  col-md-6 col-sm-12">
                     <div className="card mt-3 mb-3" style={{ border: "none" }}>
@@ -410,22 +426,22 @@ const Dev = () => {
                         <img
                           style={{ objectFit: "cover", height: "200px" }}
                           className="card-img-top"
-                          src={land}
+                          src={one}
                           alt=""
                         />
                         <div className="card-body">
                           <Text sx={{ color: "fg.default" }}>
-                            Media Landing Page
+                            King Metals
                           </Text>
                           <br />
                           <Text sx={{ color: "fg.default" }}>
-                            HTML, CSS, Javascript
+                            HTML, CSS, Javascript, Sql, Php
                           </Text>
                           <div className=" d-flex mt-3">
                             <Button
                               variant="outline"
                               sx={{ mr: 3 }}
-                              onClick={() => window.open('https://codepen.io/halfrussian/pen/GREoEGQ')}
+                              onClick={() => window.open('https://www.kingmetals.com/')}
                             >
                               Live Demo
                             </Button>
@@ -515,6 +531,48 @@ const Dev = () => {
                               Live Demo
                             </Button>
                            
+                          </div>
+                        </div>
+                      </Box>
+                    </div>
+                  </div>
+
+                  {/* CARD  COL END */}
+                  {/* CARD  COL */}
+                  <div className="col-xl-4  col-md-6 col-sm-12">
+                    <div className="card mt-3 mb-3" style={{ border: "none" }}>
+                      <Box
+                        sx={{
+                          backgroundColor: "canvas.default",
+                          border: '1px',
+                          borderRadius: 6,
+                          borderStyle: "solid",
+                          borderColor: "border.default",
+                        }}
+                      >
+                        <img
+                          style={{ objectFit: "cover", height: "200px" }}
+                          className="card-img-top"
+                          src={land}
+                          alt=""
+                        />
+                        <div className="card-body">
+                          <Text sx={{ color: "fg.default" }}>
+                            Media Landing Page
+                          </Text>
+                          <br />
+                          <Text sx={{ color: "fg.default" }}>
+                            HTML, CSS, Javascript
+                          </Text>
+                          <div className=" d-flex mt-3">
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://codepen.io/halfrussian/pen/GREoEGQ')}
+                            >
+                              Live Demo
+                            </Button>
+                            
                           </div>
                         </div>
                       </Box>
@@ -730,7 +788,7 @@ const Dev = () => {
               
 
               <div className="container-fluid mb-5">
-                <div className="row">
+              <div className="row">
                   <div className="col-12" id="results">
                     <Text
                       as="h2"
@@ -746,11 +804,64 @@ const Dev = () => {
                     <h3
                       style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
                     >
-                      Coming soon...
                     </h3>
+                    
                   </div>
                 </div>
+                <div className="row">
+                   {/* CARD  COL */}
+                <div className="col-xl-4 col-md-6 col-sm-12">
+                    <div className="card mt-3 mb-3" style={{ border: "none" }}>
+                      <Box
+                        sx={{
+                          backgroundColor: "canvas.default",
+                          border: '1px',
+                          borderRadius: 6,
+                          borderStyle: "solid",
+                          borderColor: "border.default",
+                        }}
+                      >
+                        <img
+                          style={{ objectFit: "cover", height: "200px" }}
+                          className="card-img-top"
+                          src={appro}
+                          alt=""
+                        />
+                        <div className="card-body">
+                          <Text sx={{ color: "fg.default" }}>
+                            Mixed Reality | Immersive Amazon 
+                          </Text>
+                          <br />
+                          <Text sx={{ color: "fg.default" }}>
+                          Swift
+                          </Text>
+                          <div className=" d-flex mt-3">
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://youtu.be/WnRpfLD466g')}
+                            >
+                              Live Demo
+                            </Button>
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://github.com/halfrussian/Immersive-Product-in-Amazon-Apple-Vision-Pro1.0/tree/main')}
+                            >
+                              Code
+                            </Button>
+                          </div>
+                        </div>
+                      </Box>
+                    </div>
+                  </div>
+
+                  {/* CARD  COL END */}
+                </div>
+
               </div>
+
+              
             </Box>
           </div>
         </Box>

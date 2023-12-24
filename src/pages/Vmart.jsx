@@ -75,7 +75,7 @@ const Vmart = () => {
                 </Text>
                 <Text sx={{ fontSize: "4" }}>
                   <br />
-                  Personal project developed in Figma
+                  Lead a design, product strategy, research, and visual design
                 </Text>
               </div>
             </div>
@@ -493,7 +493,7 @@ const Vmart = () => {
               </div>
             </Box>
           </div>
-        </Box>
+        </Box>Lead a design, product strategy, research, and visual design.
       </Box>
       <Footer  />
     </>

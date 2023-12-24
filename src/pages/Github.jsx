@@ -7,6 +7,8 @@ import eight from '../assets/github/eight.png'
 import el from '../assets/github/el.png'
 import ten from '../assets/github/ten.png'
 import Footer from '../components/Footer'
+import op from '../assets/github/op.png'
+import gitmap from '../assets/github/gitmap.png'
 
 
 const Github = () => {
@@ -275,6 +277,41 @@ const Github = () => {
                         </Text>
                       </div>
                     </div>
+                    <div className="row mt-5">
+                      <div className="col-12">
+                      <h3
+                          style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
+                        >
+                       User Profile
+                        </h3>
+                        <p style={{ fontSize: "20px" }}>
+                        Conducting research to better understand our users we discovered that often, when looking for support, users looked to 3rd party websites to solve their issues. 
+                      
+                        </p></div>
+                      <div className="col-12">
+                        <img  src={op} className="img-fluid" />
+                      </div>
+                    </div>
+
+                     {/* section start */}
+                <div className="row">
+                  <div className="col-12" id="goals">
+                  <h3
+                          style={{ fontSize: "30px", fontWeight: "bold", mb: "2", marginTop: "45px"}}
+                        >
+                       Sitemap
+                        </h3>
+                    <p style={{ fontSize: "20px" }}>
+                      Ensure users are able to reach solutions and explore GitHub products
+                    </p>
+                  </div>
+                </div>
+                <div className="row mb-5">
+                  <div className="col-12">
+                    <img src={gitmap} className="img-fluid" />
+                  </div>
+                </div>
+                {/* section end */}
                   </div>
     
                   <div className="container-fluid">
