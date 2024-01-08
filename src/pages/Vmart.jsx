@@ -86,7 +86,11 @@ const Vmart = () => {
         <img src={top} className="img-fluid" style={{ width: "100%" }} />
       </Box>
 
-      {/* PROJECT INFO  */}
+      {/* attempt */}
+
+      
+
+   
 
       <Box
         display="flex"
@@ -202,6 +206,10 @@ const Vmart = () => {
               </div>
             </Box>
           </div>
+
+
+
+
           <div className="aboutBody">
             <Box>
               <div className="container-fluid">
@@ -296,7 +304,7 @@ const Vmart = () => {
                   </div>
                 </div>
 
-                {/* section start */}
+                
                 <div className="row">
                   <div className="col-12" id="goals">
                     <Text
@@ -323,9 +331,7 @@ const Vmart = () => {
                     <img src={map} className="img-fluid" />
                   </div>
                 </div>
-                {/* section end */}
-
-                {/* section start */}
+                
                 <div className="row">
                   <div className="col-12" id="goals">
                     <Text
@@ -358,9 +364,7 @@ const Vmart = () => {
                     <img src={flowtwo} className="img-fluid" />
                   </div>
                 </div>
-                {/* section end */}
-
-                {/* section start */}
+                
                 <div className="row">
                   <div className="col-12" id="goals">
                     <Text
@@ -387,9 +391,7 @@ const Vmart = () => {
                   </div>
                 </div>
                 <div className="row mb-5"></div>
-                {/* section end */}
-
-                {/* section start */}
+                
                 <div className="row">
                   <div className="col-12" id="goals">
                     <Text
@@ -415,9 +417,7 @@ const Vmart = () => {
                   </div>
                 </div>
                 <div className="row mb-5"></div>
-                {/* section end */}
-
-                {/* section start */}
+                
                 <div className="row">
                   <div className="col-12" id="goals">
                     <Text
@@ -447,7 +447,7 @@ const Vmart = () => {
                   </div>
                 </div>
                 <div className="row mb-5"></div>
-                {/* section end */}
+                
               </div>
             
 
@@ -493,7 +493,7 @@ const Vmart = () => {
               </div>
             </Box>
           </div>
-        </Box>Lead a design, product strategy, research, and visual design.
+        </Box>
       </Box>
       <Footer  />
     </>

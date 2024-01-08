@@ -277,12 +277,10 @@ const Nav = (props) => {
                 fontSize: 3,
                 color: "fg.subtle",
                 ":hover": { textDecoration: "none", color: "fg.muted" },
-              }}
-             
+              }} 
                onClick={() => console.log('hello')}
             >
               <div
-
                onClick={()=> window.open("https://docs.google.com/document/d/1fAOEKDOFWi4oE_jYzXxOyxQRyLjfAoJlggPqkeKdcgY/edit?usp=sharing")}
               >
 Resume

@@ -14,6 +14,8 @@ import lib from '../assets/devCardIm/lib.png'
 import vr from '../assets/devCardIm/vr.png'
 import appro from '../assets/devCardIm/appro.png'
 import one from '../assets/king/one.png'
+import cor from '../assets/devCardIm/cour.png'
+import ufo from '../assets/devCardIm/ufo.png'
 
 const Dev = () => {
   return (
@@ -141,7 +143,25 @@ const Dev = () => {
                   Mobile
                 </Link>
               </div>
-
+              <div
+                className="link"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({
+                    top: document.querySelector("#threeD").offsetTop,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                <Link
+                  sx={{
+                    fontSize: "3",
+                    color: "fg.muted",
+                    ":hover": { cursor: "pointer" },
+                  }}
+                > 3D Designs & Games
+                </Link>
+              </div>
               <div
                 className="link"
                 onClick={(e) => {
@@ -193,10 +213,8 @@ const Dev = () => {
                 <div className="row">
                 <h3
                       style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
-                    > Personal projects I've developed</h3>
+                    > Projects I've designed and  developed</h3>
                 </div>
-                
-                
                 <div className="row">
                   <div className="col-12" id="problem">
                  
@@ -714,6 +732,135 @@ const Dev = () => {
                   
                 </div>
               </div>
+
+
+
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-12" id="threeD">
+                    <Text
+                      as="h2"
+                      sx={{
+                        fontSize: "20px",
+                        color: "fg.muted",
+                        mt: 6,
+                        mb: 6,
+                      }}
+                    >
+                     3D Designs & Games
+                    </Text>
+                    
+                
+                  </div>
+                </div>
+                <div className="row">
+                {/* CARD  COL */}
+                <div className="col-xl-4 col-md-6 col-sm-12">
+                    <div className="card mt-3 mb-3" style={{ border: "none" }}>
+                      <Box
+                        sx={{
+                          backgroundColor: "canvas.default",
+                          border: '1px',
+                          borderRadius: 6,
+                          borderStyle: "solid",
+                          borderColor: "border.default",
+                        }}
+                      >
+                        <img
+                          style={{ objectFit: "cover", height: "200px" }}
+                          className="card-img-top"
+                          src={cor}
+                          alt=""
+                        />
+                        <div className="card-body">
+                          <Text sx={{ color: "fg.default" }}>
+                            Obstacle Course
+                          </Text>
+                          <br />
+                          <Text sx={{ color: "fg.default" }}>
+                           Unity, Mathematica, C#
+                          </Text>
+                          <div className=" d-flex mt-3">
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://youtu.be/5KPmFO9R7gY?feature=shared')}
+                            >
+                              Live Demo
+                            </Button>
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://github.com/halfrussian/Obstacle-Course')}
+                            >
+                              Code
+                            </Button>
+                          </div>
+                        </div>
+                      </Box>
+                    </div>
+                  </div>
+
+                  {/* CARD  COL END */}
+                
+                {/* CARD  COL */}
+                <div className="col-xl-4 col-md-6 col-sm-12">
+                    <div className="card mt-3 mb-3" style={{ border: "none" }}>
+                      <Box
+                        sx={{
+                          backgroundColor: "canvas.default",
+                          border: '1px',
+                          borderRadius: 6,
+                          borderStyle: "solid",
+                          borderColor: "border.default",
+                        }}
+                      >
+                        <img
+                          style={{ objectFit: "cover", height: "200px" }}
+                          className="card-img-top"
+                          src={ufo}
+                          alt=""
+                        />
+                        <div className="card-body">
+                          <Text sx={{ color: "fg.default" }}>
+                            UFO Navigation
+                          </Text>
+                          <br />
+                          <Text sx={{ color: "fg.default" }}>
+                           Unity, Mathematica, C#
+                          </Text>
+                          <div className=" d-flex mt-3">
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://www.youtube.com/watch?v=ChfmjAX8u4M')}
+                            >
+                              Live Demo
+                            </Button>
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://github.com/halfrussian/UFO-Navigation-3D-Game-Unity-C-')}
+                            >
+                              Code
+                            </Button>
+                          </div>
+                        </div>
+                      </Box>
+                    </div>
+                  </div>
+
+                  {/* CARD  COL END */}
+                </div>
+              </div>
+
+
+
+
+
+
+
+
 
               <div className="container-fluid">
                 <div className="row">
