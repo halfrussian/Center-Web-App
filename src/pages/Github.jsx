@@ -268,7 +268,7 @@ const Github = () => {
                             mb: "2",
                           }}
                         >
-                          Too much to choose from creating a sense of being overwhelmed
+                          Too much to choose from, thus creating the feeling of being overwhelmed
                         </Text>
                       </div>
                       <div className="col-lg-6">
@@ -281,7 +281,7 @@ const Github = () => {
                             mb: "2",
                           }}
                         >
-                         Too much to read. User need help fast
+                         Too much to read. Users need help asap
                         </Text>
                       </div>
                     </div>

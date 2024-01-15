@@ -754,6 +754,54 @@ const Dev = () => {
                   </div>
                 </div>
                 <div className="row">
+                    {/* CARD  COL */}
+                <div className="col-xl-4 col-md-6 col-sm-12">
+                    <div className="card mt-3 mb-3" style={{ border: "none" }}>
+                      <Box
+                        sx={{
+                          backgroundColor: "canvas.default",
+                          border: '1px',
+                          borderRadius: 6,
+                          borderStyle: "solid",
+                          borderColor: "border.default",
+                        }}
+                      >
+                        <img
+                          style={{ objectFit: "cover", height: "200px" }}
+                          className="card-img-top"
+                          alt=""
+                          src="https://private-user-images.githubusercontent.com/84690420/296871556-8ef19228-a935-4d72-84f0-d35b2ea69d39.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDUzNTQyNjYsIm5iZiI6MTcwNTM1Mzk2NiwicGF0aCI6Ii84NDY5MDQyMC8yOTY4NzE1NTYtOGVmMTkyMjgtYTkzNS00ZDcyLTg0ZjAtZDM1YjJlYTY5ZDM5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTE1VDIxMjYwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkxODI4Nzk0MzU1ODU0ZTE3MTRmMDZkNWJmOWUwZGE5OThhZmExZTU4MTcyOTIxMzhhMTQ4OGJiNWY3ODdhZjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.CFhZxWJUgIx-vDgROu35dInGc4IkI2AYGaljrjUK-Cw"
+                        />
+                        <div className="card-body">
+                          <Text sx={{ color: "fg.default" }}>
+                            UFO Navigation
+                          </Text>
+                          <br />
+                          <Text sx={{ color: "fg.default" }}>
+                           Unity, Mathematica, C#
+                          </Text>
+                          <div className=" d-flex mt-3">
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://www.youtube.com/watch?v=eSCOlTwv_UI')}
+                            >
+                              Live Demo
+                            </Button>
+                            <Button
+                              variant="outline"
+                              sx={{ mr: 3 }}
+                              onClick={() => window.open('https://github.com/halfrussian/Galaxy-Battle')}
+                            >
+                              Code
+                            </Button>
+                          </div>
+                        </div>
+                      </Box>
+                    </div>
+                  </div>
+
+                  {/* CARD  COL END */}
                 {/* CARD  COL */}
                 <div className="col-xl-4 col-md-6 col-sm-12">
                     <div className="card mt-3 mb-3" style={{ border: "none" }}>
@@ -851,6 +899,7 @@ const Dev = () => {
                   </div>
 
                   {/* CARD  COL END */}
+
                 </div>
               </div>
 
