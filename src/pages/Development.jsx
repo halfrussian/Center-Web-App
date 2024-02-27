@@ -16,6 +16,7 @@ import appro from '../assets/devCardIm/appro.png'
 import one from '../assets/king/one.png'
 import cor from '../assets/devCardIm/cour.png'
 import ufo from '../assets/devCardIm/ufo.png'
+import batt from '../assets/devCardIm/batt.png'
 
 const Dev = () => {
   return (
@@ -770,15 +771,15 @@ const Dev = () => {
                           style={{ objectFit: "cover", height: "200px" }}
                           className="card-img-top"
                           alt=""
-                          src="https://private-user-images.githubusercontent.com/84690420/296871556-8ef19228-a935-4d72-84f0-d35b2ea69d39.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDUzNTQyNjYsIm5iZiI6MTcwNTM1Mzk2NiwicGF0aCI6Ii84NDY5MDQyMC8yOTY4NzE1NTYtOGVmMTkyMjgtYTkzNS00ZDcyLTg0ZjAtZDM1YjJlYTY5ZDM5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTE1VDIxMjYwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkxODI4Nzk0MzU1ODU0ZTE3MTRmMDZkNWJmOWUwZGE5OThhZmExZTU4MTcyOTIxMzhhMTQ4OGJiNWY3ODdhZjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.CFhZxWJUgIx-vDgROu35dInGc4IkI2AYGaljrjUK-Cw"
-                        />
+                          src={batt}
+                           />
                         <div className="card-body">
                           <Text sx={{ color: "fg.default" }}>
-                            UFO Navigation
+                            Galaxy Battle 
                           </Text>
                           <br />
                           <Text sx={{ color: "fg.default" }}>
-                           Unity, Mathematica, C#
+                           Unity, C#
                           </Text>
                           <div className=" d-flex mt-3">
                             <Button

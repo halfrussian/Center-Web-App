@@ -14,6 +14,7 @@ import Github from './pages/Github'
 import Clapper from './pages/Clapper'
 import Footer from "./components/Footer";
 import Dev from "./pages/Development";
+import GitHubSuccess from "./pages/GitHubSuccess";
 
 
 
@@ -37,7 +38,7 @@ const App = () => {
            
           <Route exact path='/about' element={<About />} />
           <Route exact path='/interests' element={<Interests />} />
-
+          <Route exact path='/github-success' element={<GitHubSuccess  />} />
           <Route exact path='/github' element={<Github  />} />
           <Route exact path='/market' element={<Market  />} />
           <Route exact path='/clapper' element={<Clapper  />} />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Heading, Box, Link } from "@primer/react";
+import { Text, Heading, Box, Link, Timeline } from "@primer/react";
 import "../components/About.css";
 import Image from "../assets/heroimg.webp";
 import bImage from "../assets/belgium.webp";

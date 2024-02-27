@@ -28,7 +28,7 @@ const HeroIntro = () => {
               fontWeight: '700'
             }}
           >
-            I’m a strategic Product Designer (ex Github)
+            I’m a strategic Product Designer (ex GitHub)
           </Heading>
 
           <Text
@@ -37,9 +37,9 @@ const HeroIntro = () => {
               color: "fg.default",
             }}
           >
-            Armed with the real world experience I was recently a UX Designer for Github. I specialize in implementing System Thinking, within an Agile
-            environment, for Saas, E-commerce, CRM Databases, Support Portals and more.
-            And if clients are low on developers I help them code as well. On a lighter note, in my spare time I experiment in developing for the MetaQuest and Apple Vision Pro.
+            Armed with the real world experience I was recently a UX Designer for GitHub. I specialize in implementing System Thinking, within an Agile
+            environment for B2B products. Including: SaaS, Ecommerce, and Support Portals. 
+            And if clients are low on developers I help them code as well. On a lighter note, in my spare time I experiment in developing for VR/MR, but my passions are in UX/UI.
           </Text>
           <Box sx={{
             paddingTop: 3,

@@ -5,13 +5,22 @@ import king from '../assets/projectCardImages/king.webp'
 import clap from '../assets/projectCardImages/clap.webp'
 import ver from '../assets/projectCardImages/ver.png'
 import vmart from '../assets/projectCardImages/vmart.webp'
+import success from '../assets/projectCardImages/success.webp'
  
 export const projectData = [
     {
         id: 1,
+        image: success,
+        categories: ['B2B', 'B2C', 'Web', 'Branding'],
+        title: "GitHub Success Portal - Building a Portal that will allow Enterprise customer's to succeed without the Need of Human Support",
+        desc: " In this project, I conceptualized and designed the GitHub Success Portal, a groundbreaking platform tailored for Enterprise customers.",
+        link: '/github-success'
+    },
+    {
+        id: 1,
         image: github,
         categories: ['B2B', 'B2C', 'Web', 'Branding'],
-        title: 'Github - Revamping the Support Portal to Facilitate the Resolution of Challenges Encountered by All Members of the GitHub Community',
+        title: 'GitHub - Revamping the Support Portal to Facilitate the Resolution of Challenges Encountered by All Members of the GitHub Community',
         desc: 'In overhauling the support portal, my focus is on user-centric design, ensuring intuitive navigation, responsive design across devices.. ',
         link: '/github'
     },
