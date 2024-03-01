@@ -20,13 +20,20 @@ const Projects = (props) => {
             <div className="row align-items-center">
               {props.data.map((cardItem) => {
                 const { id, image, categories, title, desc, link } = cardItem;
-
+console.log(props.data)
                 return (
                   <>
                     <div
                       className="col-lg-6"
                       key={id}
-                      onClick={() => navigate(link)}
+                      onClick={() => {
+                        if(id === 12){
+                          return null 
+                        } else {
+                          navigate(link)
+                        }
+                      }}
+                      
                     >
                       <Box sx={{ ":hover": { cursor: "pointer" } }}>
                         <Box>

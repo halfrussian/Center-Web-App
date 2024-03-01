@@ -240,7 +240,7 @@ const Github = () => {
                         <h3
                           style={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
                         >
-                         "Challenging to navigate and plagued by inconsistent branding
+                         Challenging to navigate and plagued by inconsistent branding
                         </h3>
                         <p style={{ fontSize: "20px" }}>
                         The challenges in user navigation stemmed from an antiquated user

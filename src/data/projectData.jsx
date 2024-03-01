@@ -6,11 +6,11 @@ import clap from '../assets/projectCardImages/clap.webp'
 import ver from '../assets/projectCardImages/ver.png'
 import vmart from '../assets/projectCardImages/vmart.webp'
 import success from '../assets/projectCardImages/success.webp'
- 
+import comesoon from '../assets/projectCardImages/comesoon.png'
 export const projectData = [
     {
-        id: 1,
-        image: success,
+        id: 12,
+        image: comesoon,
         categories: ['B2B', 'B2C', 'Web', 'Branding'],
         title: "GitHub Success Portal - Building a Portal that will allow Enterprise customer's to succeed without the Need of Human Support",
         desc: " In this project, I conceptualized and designed the GitHub Success Portal, a groundbreaking platform tailored for Enterprise customers.",
