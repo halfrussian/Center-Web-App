@@ -48,7 +48,7 @@ const Footer = () => {
                 color: 'fg.default',
                 fontSize: 1,
               }}
-                href="https://www.instagram.com/joshaaronbracken_/">
+                href="https://www.instagram.com/joshuabracken__/">
                   Instagram</Link>
               </div>
             </div>

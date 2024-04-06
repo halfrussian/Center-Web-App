@@ -1,33 +1,39 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Box, Button } from "@primer/react";
-import { projectData } from '../data/projectData'
+import { projectData } from "../data/projectData";
 import Projects from "./Projects";
 
 const FilteringProjects = () => {
-  const [filteredData, setFilteredData] = useState(projectData)
+  const [filteredData, setFilteredData] = useState(projectData);
   const bTooBFilter = () => {
-
-    setFilteredData(projectData.filter(item => item.categories.includes('B2B')))
-  }
+    setFilteredData(
+      projectData.filter((item) => item.categories.includes("B2B"))
+    );
+  };
 
   const bTooCFilter = () => {
-    setFilteredData(projectData.filter(item => item.categories.includes('B2C')))
-  }
-
+    setFilteredData(
+      projectData.filter((item) => item.categories.includes("B2C"))
+    );
+  };
 
   const mobileFilter = () => {
-    setFilteredData(projectData.filter(item => item.categories.includes('Mobile')))
-  }
+    setFilteredData(
+      projectData.filter((item) => item.categories.includes("Mobile"))
+    );
+  };
 
   const brandingFilter = () => {
-    setFilteredData(projectData.filter(item => item.categories.includes('Branding')))
-  }
-    
+    setFilteredData(
+      projectData.filter((item) => item.categories.includes("Branding"))
+    );
+  };
 
   const webFilter = () => {
-    setFilteredData(projectData.filter(item => item.categories.includes('Web')))
-  }
-
+    setFilteredData(
+      projectData.filter((item) => item.categories.includes("Web"))
+    );
+  };
 
   return (
     <>
@@ -48,17 +54,18 @@ const FilteringProjects = () => {
           }}
         >
           <Button
-          
             sx={{
               padding: "5px 20px",
               textAlign: "center",
               display: "inline-block",
               borderRadius: "25px",
               marginRight: 3,
-              height: '40px',
+              height: "40px",
               fontSize: 2,
-              backgroundColor: "accent.muted",
-              marginBottom: 3
+              backgroundColor: "canvas.default",
+              marginBottom: 3,
+              boxShadow: " 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+              transition: "all 0.3s cubic-bezier(.25,.8,.25,1)"
             }}
             onClick={bTooBFilter}
           >
@@ -71,10 +78,12 @@ const FilteringProjects = () => {
               display: "inline-block",
               borderRadius: "25px",
               marginRight: 3,
-              height: '40px',
+              height: "40px",
               fontSize: 2,
-              backgroundColor: "accent.muted", 
-              marginBottom: 3
+              backgroundColor: "canvas.default",
+              marginBottom: 3,
+              boxShadow: " 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+              transition: "all 0.3s cubic-bezier(.25,.8,.25,1)"
             }}
             onClick={bTooCFilter}
           >
@@ -87,10 +96,12 @@ const FilteringProjects = () => {
               display: "inline-block",
               borderRadius: "25px",
               marginRight: 3,
-              height: '40px',
+              height: "40px",
               fontSize: 2,
-              backgroundColor: "accent.muted",
-              marginBottom: 3
+              backgroundColor: "canvas.default",
+              marginBottom: 3,
+              boxShadow: " 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+              transition: "all 0.3s cubic-bezier(.25,.8,.25,1)"
             }}
             onClick={webFilter}
           >
@@ -103,10 +114,12 @@ const FilteringProjects = () => {
               display: "inline-block",
               borderRadius: "25px",
               marginRight: 3,
-              height: '40px',
+              height: "40px",
               fontSize: 2,
-              backgroundColor: "accent.muted",
-              marginBottom: 3
+              backgroundColor: "canvas.default",
+              marginBottom: 3,
+              boxShadow: " 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+              transition: "all 0.3s cubic-bezier(.25,.8,.25,1)"
             }}
             onClick={mobileFilter}
           >
@@ -119,10 +132,12 @@ const FilteringProjects = () => {
               display: "inline-block",
               borderRadius: "25px",
               marginRight: 3,
-              height: '40px',
+              height: "40px",
               fontSize: 2,
-              backgroundColor: "accent.muted",
-              marginBottom: 3
+              backgroundColor: "canvas.default",
+              marginBottom: 3,
+              boxShadow: " 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+              transition: "all 0.3s cubic-bezier(.25,.8,.25,1)"
             }}
             onClick={brandingFilter}
           >
@@ -130,12 +145,7 @@ const FilteringProjects = () => {
           </Button>
         </Box>
       </Box>
-      <Projects 
-      
-      
-      data={filteredData} 
-      
-      />
+      <Projects data={filteredData} />
     </>
   );
 };

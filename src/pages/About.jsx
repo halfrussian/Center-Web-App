@@ -155,14 +155,14 @@ const About = () => {
                     <p style={{ fontSize: "20px" }}>
                     In my formative years as an individual of biracial heritage,
                      I encountered a distinct sense of not belonging to any specific
-                      social group. The nuanced challenge arose from not aligning 
+                      social group. This nuanced challenge arose from not aligning 
                       seamlessly with either of my communities of ancestry.
                        <br />
                        
                      
                          <div className="mt-3" />
-                      Through designing, and developing for
-                      both myself and clients I’ve discovered myself and
+                      Through designing, and developing, for
+                      both myself and clients, I’ve discovered myself and
                       strived to be inclusive and empathetic in all projects I work on.
                     </p>
                   </div>
@@ -235,7 +235,7 @@ const About = () => {
                       as="h3"
                       sx={{ fontSize: "30px", fontWeight: "bold", mb: "2" }}
                     >
-                      I'm a athletic, open, and quirky product designer who
+                      I'm an athletic, open, and quirky product designer who
                       loves to challenge the status quo inside and outside of
                       work
                     </Heading>
@@ -318,8 +318,8 @@ const About = () => {
                     >https://www.linkedin.com/in/joshua-b-a23349a6/</Link></Text>
                     <Text sx={{mt: '1', fontSize: '3', fontWeight: 'bold'}}>Instagram - 
                     <Link
-                    href="https://www.instagram.com/joshaaronbracken_/"
-                    >https://www.instagram.com/joshaaronbracken_/</Link></Text>
+                    href="https://www.instagram.com/joshuabracken__/"
+                    >https://www.instagram.com/joshuabracken__/</Link></Text>
                  
 
                 </div>

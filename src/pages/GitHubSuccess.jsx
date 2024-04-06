@@ -350,15 +350,15 @@ const GitHubSuccess = () => {
                   <div className="row">
                     <div className="col-12" id="goals">
                       <Text
-                        as="h2"
+                        as="h3"
                         sx={{
-                          fontSize: "20px",
+                          fontSize: "30px",
                           color: "fg.muted",
                           mt: "6",
                           mb: "2",
                         }}
                       >
-                        Goals
+                       Goal 
                       </Text>
                       <h3
                         style={{
@@ -367,9 +367,11 @@ const GitHubSuccess = () => {
                           mb: "2",
                         }}
                       >
-                        title
+                         Create a Success Portal, on top of GitHub's Support Portal, 
+                        that will enable Enterprise Admins to ramp up production and
+                         see their Enterprises' Health at a Glance
                       </h3>
-                      <p style={{ fontSize: "20px" }}>para</p>
+                      
                     </div>
                   </div>
                 </div>
@@ -412,13 +414,16 @@ const GitHubSuccess = () => {
                     </h3>
                     <Link
                     sx={{
-                     marginTop: '45px'
-                      
+                     marginTop: '45px',
+                     fontSize: "30px",
+                     ":hover" :{
+                      cursor: 'pointer'
+                     }
                     }}
                     onClick={()=> window.open("https://www.figma.com/file/2oAVhP7fdeaGjblNFliDSL/Untitled?type=whiteboard&node-id=0-1&t=ANOIQW5lEosYNTlf-0")}
                  
                     
-                    >Full Preview > </Link>
+                    >Full Preview</Link>
                     
                   </div>
                  
@@ -428,6 +433,8 @@ const GitHubSuccess = () => {
                     <img src={map} className="img-fluid" />
                   </div>
                 </div>
+                
+
                 {/* section end */}
               </div>
 

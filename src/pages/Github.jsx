@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Heading, Box, Link } from "@primer/react";
+import { Text, Heading, Box, Link, Button} from "@primer/react";
 import top from '../assets/github/top.webp'
 import sub from '../assets/github/sub.png'
 import seven from '../assets/github/seven.png'
@@ -431,6 +431,23 @@ const Github = () => {
                          surpasses its predecessor by light years, constituting
                           a significant and commendable improvement.
                         </p>
+                        <Button
+                        sx={{
+                            marginTop: 5,
+                        padding: "5px 20px",
+                        marginBottom: 5,
+                        textAlign: "center",
+                        display: "inline-block",
+                        borderRadius: "25px",
+                        marginRight: 3,
+                        height: '40px',
+                        fontSize: 2,
+                        backgroundColor: "accent.muted",
+                        }}
+                        onClick={()=> window.open("https://www.figma.com/file/kP8HHHi8E63nnTeSJ29Wuk/V2-Support-Portal?type=design&node-id=946%3A2600&mode=design&t=QgLXgJncZWV5KFir-1")}
+                    >
+                        Figma File
+                    </Button>
                       </div>
                     </div>
                   </div>

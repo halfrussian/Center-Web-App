@@ -224,8 +224,8 @@ const Nav = (props) => {
               Design
             </Header.Link>
           </ActionList.Item>
-          {/* <ActionList.Divider /> */}
-          {/* <ActionList.Item
+           {/* <ActionList.Divider /> 
+          <ActionList.Item
             sx={{
               fontSize: 3,
               color: "fg.subtle",
@@ -242,8 +242,8 @@ const Nav = (props) => {
             >
               <div onClick={() => navigate("/dev")}>Development</div>
             </Header.Link>
-          </ActionList.Item>
-           */}
+          </ActionList.Item> */}
+          
           <ActionList.Divider />
           <ActionList.Item
             sx={{
