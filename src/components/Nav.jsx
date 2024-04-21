@@ -88,7 +88,7 @@ const Nav = () => {
                 aria-current={index === currentItemIndex ? "page" : undefined}
                 onClick={() => handleItemClick(index)}
                 sx={{
-                  fontSize: [ 2],
+                  fontSize: [2],
                   paddingRight: [3, 3, 6],
                   paddingLeft: [3, 3, 6],
                   marginTop: [1, 2, 4],
