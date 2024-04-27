@@ -16,7 +16,7 @@ const App = () => {
   }, [themeStyles]);
 
   return (
-    <ThemeProvider colorMode={"dark"}>
+    <ThemeProvider colorMode={"light"}>
       <Nav></Nav>
       <BaseStyles>
         <Routes>

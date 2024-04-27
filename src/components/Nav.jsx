@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, Box, UnderlineNav, NavList } from "@primer/react";
+import { Text, Box, UnderlineNav, NavList, TabNav } from "@primer/react";
 import Democrat from "./Democrat";
 import Republican from "./Republican";
 import Center from "./Center";
@@ -8,6 +8,7 @@ import { SearchIcon } from "@primer/octicons-react";
 import { StarIcon } from "@primer/octicons-react";
 import AdSpace from "./AdSpace";
 import NewsSecondLayer from "./NewsSecondLayer";
+//democrat
 import cnn from "../assets/newslogos/cnn.png";
 import bbc from "../assets/newslogos/bbc.png";
 import abc from "../assets/newslogos/abc.jpg";
@@ -16,6 +17,14 @@ import msnbc from "../assets/newslogos/msnbc.jpg";
 import vice from "../assets/newslogos/vice.png";
 import huff from "../assets/newslogos/huff.png";
 import wp from "../assets/newslogos/wp.png";
+//republican
+import fox from "../assets/newslogos/fox.png";
+import hill from "../assets/newslogos/hill.png";
+import amcon from "../assets/newslogos/amcon.jpg";
+import nr from "../assets/newslogos/nr.png";
+import wsj from "../assets/newslogos/wsj.jpg";
+import wt from "../assets/newslogos/wt.png";
+import bri from "../assets/newslogos/bri.png";
 
 const Nav = () => {
   const [currentItemIndex, setCurrentItemIndex] = useState(0);
@@ -41,7 +50,12 @@ const Nav = () => {
       case 1:
         return <Center />;
       case 2:
-        return <Republican />;
+        return <Republican 
+            repArray={repArray}
+            setNewsSelected={setNewsSelected}
+            setShowFirstLayer={setShowFirstLayer}
+        
+        />;
       case 3:
         return console.log("hello");
       default:
@@ -54,15 +68,29 @@ const Nav = () => {
   const dataArray = [
     {
       demo: [
-        ,
-        { id: 1, image: cnn, title: "CNN" },
-        { id: 2, image: bbc, title: "BBC" },
-        { id: 3, image: abc, title: "ABC" },
-        { id: 4, image: usa, title: "USA Today" },
-        { id: 5, image: msnbc, title: "MSNBC" },
-        { id: 6, image: vice, title: "Vice News" },
-        { id: 7, image: huff, title: "Huffington Post" },
-        { id: 8, image: wp, title: "Washington Post" },
+        { id: 1, image: cnn, title: "CNN", api: 'cnn'},
+        { id: 2, image: bbc, title: "BBC", api:'bbc-news'},
+        { id: 3, image: abc, title: "ABC",api: 'abc-news'},
+        { id: 4, image: usa, title: "USA Today" , api:'usa-today'},
+        { id: 5, image: msnbc, title: "MSNBC" , api:'msnbc'},
+        { id: 6, image: vice, title: "Vice News" , api:'vice-news'},
+        { id: 7, image: huff, title: "Huffington Post" , api:'the-huffington-post'},
+        { id: 7, image: wp, title: "Washington Post" , api:'the-washington-post'},
+      ],
+    },
+  ];
+
+  const repArray = [
+    {
+      demo: [
+        { id: 1, image: bri, title: "Breibart", api: 'breitbart-news'},
+        { id: 4, image: wt, title: "The Washington Times" , api:'the-washington-times'},
+        { id: 7, image: amcon, title: "The American Conservative" , api:'the-american-conservative'},
+        { id: 2, image: wsj, title: "Wall Street Journal", api:'the-wall-street-journal'},
+        { id: 3, image: hill, title: "The Hill",api: 'the-hill'},
+        { id: 5, image: fox, title: "Fox News" , api:'fox-news'},
+        { id: 6, image: nr, title: "National Review" , api:'national-review'},
+        
       ],
     },
   ];
@@ -87,21 +115,21 @@ const Nav = () => {
           }}
         >
           <NavList.Item sx={{ padding: 3 }}>
-            <NavList.LeadingVisual>{<HomeIcon />}</NavList.LeadingVisual>
+            <NavList.LeadingVisual sx={{color: 'fg.default'}}>{<HomeIcon sx={{color: 'fg.default'}}/>}</NavList.LeadingVisual>
             <Text sx={{ fontSize: 2, display: ["none", "none", "block"] }}>
               Home
             </Text>
           </NavList.Item>
           <NavList.Divider></NavList.Divider>
           <NavList.Item sx={{ padding: 3 }}>
-            <NavList.LeadingVisual>{<SearchIcon />}</NavList.LeadingVisual>
+            <NavList.LeadingVisual sx={{color: 'fg.default'}}>{<SearchIcon />}</NavList.LeadingVisual>
             <Text sx={{ fontSize: 2, display: ["none", "none", "block"] }}>
               Search
             </Text>
           </NavList.Item>
           <NavList.Divider></NavList.Divider>
           <NavList.Item sx={{ padding: 3 }}>
-            <NavList.LeadingVisual>{<StarIcon />}</NavList.LeadingVisual>
+            <NavList.LeadingVisual sx={{color: 'fg.default'}}>{<StarIcon />}</NavList.LeadingVisual>
             <Text sx={{ fontSize: 2, display: ["none", "none", "block"] }}>
               Favorites
             </Text>
@@ -115,38 +143,40 @@ const Nav = () => {
             backgroundColor: "canvas.default",
           }}
         >
-          <UnderlineNav
+          <TabNav
+          
             sx={{
               display: ["flex"],
               justifyContent: ["center"],
               backgroundColor: "canvas.default",
               position: "sticky",
               top: 0,
+              marginTop: 4
             }}
-            aria-label="nav"
+            aria-label="false"
           >
             {navItems.map((item, index) => (
-              <UnderlineNav.Item
+              <TabNav.Link
                 key={index}
                 href="#"
+                selected={index === currentItemIndex ? "page" : undefined}
                 aria-current={index === currentItemIndex ? "page" : undefined}
                 onClick={() => {
                   handleItemClick(index)
                   setShowFirstLayer(true)
                 }}
                 sx={{
-                  fontSize: 2,
-                  paddingRight: [2, 4, 5, 7, 9],
-                  paddingLeft: [2, 4, 5, 7, 9],
+                  fontSize: [1,1,2],
+                  paddingRight: [2, 5, 6, 7, 9],
+                  paddingLeft: [2, 5, 6, 7, 9],
                 }}
               >
                 {item}
-              </UnderlineNav.Item>
+              </TabNav.Link>
             ))}
-          </UnderlineNav>
+          </TabNav>
 
           {/* SCROLLABLE VIEW */}
-
           <NewsSecondLayer
             renderComponent={renderComponent}
             showFirstLayer={showFirstLayer}

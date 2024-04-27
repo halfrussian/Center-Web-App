@@ -9,13 +9,13 @@ const Democrat = (props) => {
 
 
     const url =
-      "https://newsapi.org/v2/top-headlines?sources=usa-today&apiKey=ecd4da5bd61f43779b5db9efee1d4034";
+      `https://newsapi.org/v2/top-headlines?sources=${'placeholder'}&apiKey=`;
     fetch(url).then((res) => {
       console.log(res.json());
     });
   };
 
-  console.log(props)
+  // console.log(props)
 
   const democratArray = props.dataArray[0].demo 
 
