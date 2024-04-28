@@ -1,66 +1,75 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 import { Box } from "@primer/react";
-import '../General.css'
-
+import "../General.css";
+import NewsSecondLayer from "./NewsSecondLayer";
 
 const Democrat = (props) => {
-  const buttonClick = () => {
-    //ecd4da5bd61f43779b5db9efee1d4034
+  
+  const { hide, setHide,newsSelected } = props; 
 
+  useEffect(() => {
+  
+  }, [ ]);
 
-    const url =
-      `https://newsapi.org/v2/top-headlines?sources=${'placeholder'}&apiKey=`;
-    fetch(url).then((res) => {
-      console.log(res.json());
-    });
-  };
+  const democratArray = props.dataArray[0].demo;
 
-  // console.log(props)
+  console.log(props.newsSelected)
 
-  const democratArray = props.dataArray[0].demo 
+  
 
   return (
-    <Box sx={{ backgroundColor: "canvas.default" }}>
-      <div className="container-fluid">
-        <div className="row mt-2">
-          {democratArray.map((imageItem) => {
-            const { id, image, title } = imageItem;
-            return (
-              <>
-                <div
-                  onClick={() => {
-                    props.setShowFirstLayer(false)
-                    props.setNewsSelected(title)
-                    console.log(title)
-                  }}
-                  key={id}
-                  align="center"
-                  className="col-lg-4 col-md-6 col-sm-12 point"
-                >
-                    <Box
-                      style={{
-                        marginBottom: 5,
-                        marginTop: 5,
-                        borderColor: 'border.subtle',
-                        border: "1px solid",
-                        borderRadius: "6px",
-                        maxWidth: '220px'
+    <>
+      {!hide ? (
+        <Box sx={{ backgroundColor: "canvas.default" }}>
+          <div className="container-fluid">
+            <div className="row mt-2">
+              {democratArray.map((imageItem) => {
+                const { id, image, title } = imageItem;
+                return (
+                  <>
+                    <div
+                      onClick={() => {
+                        //  props.setShowFirstLayer(false)
+                        props.setNewsSelected(title);
+                        setHide(true);
                       }}
+                      key={id}
+                      align="center"
+                      className="col-lg-4 col-md-6 col-sm-12 point"
                     >
-                      <img
-                        style={{ borderRadius: "6px" }}
-                        src={image}
-                        className="card-img-top"
-                        alt=""
-                      />
-                    </Box>
-                </div>
-              </>
-            );
-          })}
-        </div>
-      </div>
-    </Box>
+                      <Box
+                        style={{
+                          marginBottom: 5,
+                          marginTop: 5,
+                          borderColor: "border.subtle",
+                          border: "1px solid",
+                          borderRadius: "6px",
+                          maxWidth: "220px",
+                        }}
+                      >
+                        <img
+                          style={{ borderRadius: "6px" }}
+                          src={image}
+                          className="card-img-top"
+                          alt=""
+                        />
+                      </Box>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+          </div>
+        </Box>
+      ) : (
+        <>
+          <NewsSecondLayer 
+          newsSelected={newsSelected}
+          
+          hide={hide} />
+        </>
+      )}
+    </>
   );
 };
 

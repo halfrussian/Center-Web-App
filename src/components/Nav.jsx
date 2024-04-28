@@ -31,6 +31,8 @@ const Nav = () => {
   const [newsSelected, setNewsSelected] = useState(null);
   const [showFirstLayer, setShowFirstLayer] = useState(true);
 
+  const [hide, setHide] = useState(false);
+
   const handleItemClick = (index) => {
     setCurrentItemIndex(index);
   };
@@ -43,8 +45,11 @@ const Nav = () => {
         return (
           <Democrat
             dataArray={dataArray}
+            newsSelected={newsSelected}
             setNewsSelected={setNewsSelected}
             setShowFirstLayer={setShowFirstLayer}
+            hide={hide}
+            setHide={setHide}
           />
         );
       case 1:
@@ -62,8 +67,6 @@ const Nav = () => {
         return null;
     }
   };
-
-  console.log(showFirstLayer);
 
   const dataArray = [
     {
@@ -177,12 +180,8 @@ const Nav = () => {
           </TabNav>
 
           {/* SCROLLABLE VIEW */}
-          <NewsSecondLayer
-            renderComponent={renderComponent}
-            showFirstLayer={showFirstLayer}
-            setShowFirstLayer={setShowFirstLayer}
-            newsSelected={newsSelected}
-          />
+          {renderComponent()}
+          
         </Box>
         {/* ad space */}
         <Box

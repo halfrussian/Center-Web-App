@@ -27,20 +27,6 @@ const NewsSecondLayer = (props) => {
     { id: 19, title: "Washington Post", api: "the-washington-post" },
   ];
 
-  const item = {
-    author: "BBC News",
-    content:
-      "King Charles will resume public engagements next week after making encouraging progress in his cancer treatment, Buckingham Palace has said.\r\nIt won't yet be a full return to official engagements for… [+3348 chars]",
-    description:
-      "King Charles is returning to public events after making encouraging progress in his cancer treatment.",
-    publishedAt: "2024-04-26T17:37:17.6668409Z",
-    source: { id: "bbc-news", name: "BBC News" },
-    title:
-      "King Charles to resume public duties after progress in cancer treatment",
-    url: "https://www.bbc.co.uk/news/uk-68906421",
-    urlToImage:
-      "https://ichef.bbci.co.uk/news/1024/branded_news/4B2B/production/_133234291_ba1c98acd2d884d2dd1cff0ce0dc0dd9d3da1f14.jpg",
-  };
 
   useEffect(() => {
     const matchingObject = dataApiArray.find(
@@ -55,21 +41,17 @@ const NewsSecondLayer = (props) => {
       )
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
+          
           setTopTrendingArray(data.articles);
         })
         .catch((error) => console.error("Error fetching data:", error));
     }
-  }, [props.newsSelected]);
+  }, [props.hide]);
+
+  console.log(topTrendingArray)
 
   return (
     <>
-      {props.showFirstLayer ? (
-        <Box sx={{ backgroundColor: "canvas.defaut" }}>
-          {props.renderComponent()}
-        </Box>
-      ) : (
-        <>
           <Box
             sx={{
               "&:hover": {
@@ -82,7 +64,7 @@ const NewsSecondLayer = (props) => {
             <Link
               sx={{}}
               onClick={() => {
-                props.setShowFirstLayer(true);
+               // props.setShowFirstLayer(true);
               }}
             >
               <ArrowLeftIcon /> Back
@@ -123,7 +105,6 @@ const NewsSecondLayer = (props) => {
                 return (
                   <>
                     <div 
-                    
                     key={url}
                     className="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-3">
                       <Box sx={{}}>
@@ -145,8 +126,7 @@ const NewsSecondLayer = (props) => {
               })}
             </div>
           </div>
-        </>
-      )}
+        
     </>
   );
 };
